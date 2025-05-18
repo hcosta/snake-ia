@@ -57,14 +57,21 @@ Imagina que queremos enseñarle a una serpiente digital a jugar al Snake.
     * **Configuración de TensorFlow y GPU**: El primer escollo fue el rendimiento. Entrenar la red neuronal usando solo la CPU era extremadamente lento. Intenté configurar TensorFlow para usar la GPU (con CUDA) de forma nativa en Windows, pero no fue sencillo. La solución vino al utilizar contenedores Docker con entornos de TensorFlow preconfigurados por Nvidia, lo que permitió acelerar significativamente el proceso.
     * **Entrenamiento Headless**: Los contenedores Docker, por defecto, carecen de entorno gráfico, lo que impedía ejecutar la visualización del juego. Aunque inicialmente usé el comando `xvfb-run` como una solución temporal para simular un entorno gráfico, finalmente opté por una solución más robusta: refactorizar el código para separar completamente la lógica del juego de la interfaz gráfica. Esto permitió un entrenamiento "headless" eficiente y la creación de múltiples interfaces (una con Arcade y otra en modo texto para la terminal, ¡gracias `Gemini` por la ayuda con la versión `curses`!).
 * **Evolución del Aprendizaje**:
-    * Tras aproximadamente 7,500 episodios de entrenamiento (unas 10-12 horas de procesamiento con GPU, aunque con cierto cuello de botella debido a la naturaleza de Python y la comunicación con la GPU), el agente DQN está mostrando un rendimiento muy prometedor. En las últimas fases del entrenamiento, está promediando de forma estable alrededor de **15-17 puntos** (media de los últimos 100 episodios), con picos individuales que superan los 30 puntos (¡e incluso llegando a 41 en pruebas!).
-    * Es importante destacar que, aunque la media de entrenamiento actual del DQN es inferior a la media final del Q-Learning, el DQN lo ha logrado con **muchísimos menos episodios de entrenamiento** (7.5k vs 200k) y sigue mostrando una clara tendencia ascendente.
+    * Tras aproximadamente 8,500 episodios de entrenamiento (unas 10-12 horas de procesamiento con GPU, aunque con cierto cuello de botella debido a la naturaleza de Python y la comunicación con la GPU), el agente DQN está mostrando un rendimiento muy prometedor. En las últimas fases del entrenamiento, está promediando de forma estable alrededor de **15-17 puntos** (media de los últimos 100 episodios), con picos individuales que superan los 30 puntos (¡e incluso llegando a 41 en pruebas!).
+    * Es importante destacar que, aunque la media de entrenamiento actual del DQN es inferior a la media final del Q-Learning, el DQN lo ha logrado con **muchísimos menos episodios de entrenamiento** (8.5k vs 200k) y sigue mostrando una clara tendencia ascendente.
     * El aprendizaje sigue un patrón de "dientes de sierra": hay ciclos de mejora, seguidos de pequeñas bajadas o mesetas donde parece consolidar lo aprendido, para luego volver a escalar y superar el rendimiento anterior. Por ejemplo, tardó unos 3,500 episodios en promediar consistentemente 5 puntos, pero la progresión se ha acelerado notablemente después.
 * **Comparativa Actual y Próximos Pasos**:
     * Aunque el Q-Learning, con su vasto entrenamiento, todavía puede mostrar una media ligeramente superior en tandas de prueba cortas, el **potencial y la eficiencia de aprendizaje del DQN son claramente superiores**. Ya iguala e incluso supera los picos de rendimiento del Q-Learning con una fracción del entrenamiento.
     * El principal desafío para el DQN sigue siendo perfeccionar las estrategias para evitar auto-colisiones a largo plazo. Continuaré el entrenamiento hasta los 100,000 episodios (o más si sigue mejorando) para observar si puede superar consistentemente al Q-Learning y dominar este aspecto del juego. No descarto reiniciar el entrenamiento con hiperparámetros ajustados si se observa un estancamiento persistente más adelante, pero por ahora, ¡la progresión es alentadora!
 
 *Gráficos y visualizaciones del agente DQN:*
+
+<p align="center">
+  <img src="/docs/shell-DQN.png" alt="Logs del entrenamiento inicial"/>
+</p>
+<p align="center">
+  <em>Logs del entrenamiento tras 8.500 episodios.</em>
+</p>
 
 <p align="center">
   <img src="/docs/plot-DQN.png" alt="Gráfico de recompensas del entrenamiento DQN" width="70%"/>
@@ -78,13 +85,6 @@ Imagina que queremos enseñarle a una serpiente digital a jugar al Snake.
 </p>
 <p align="center">
   <em>Visualización del entrenamiento del agente DQN.</em>
-</p>
-
-<p align="center">
-  <img src="/docs/shell-DQN.png" alt="Agente DQN jugando en la terminal"/>
-</p>
-<p align="center">
-  <em>El agente DQN también puede jugar en una interfaz de texto simple.</em>
 </p>
 
 ## 🚀 Cómo Empezar (Próximamente)
