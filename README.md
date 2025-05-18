@@ -48,8 +48,12 @@ Imagina que queremos enseñarle a una serpiente digital a jugar al Snake.
 * **El Gran Límite**: El principal problema insuperable para este modelo fue su incapacidad para resolver eficazmente el problema de **quedar encerrado en sí mismo**. La serpiente aprendía a evitar las paredes y a buscar la comida, pero la planificación a largo plazo para no crear bucles fatales resultaba demasiado compleja para la tabla Q.
 * **Conclusión sobre Q-Learning**: Aunque el juego *Snake* parece simple inicialmente (ir hacia la comida), requiere una estrategia considerable a largo plazo para la supervivencia. Los sistemas Q-Learning clásicos, al depender de memorizar cada estado, no parecen ser la herramienta más adecuada para dominar esta complejidad inherente, lo que me motivó a explorar las redes neuronales.
 
-*Visualización del entrenamiento del agente Q-Learning:*
-<img src="/docs/demo-QL-Log.gif" alt="Log de entrenamiento del agente Q-Learning"/>
+<p align="center">
+  <img src="/docs/demo-QL-Log.gif" alt="isualización del agente QL en modo juego (sin entrenamiento)"/>
+</p>
+<p align="center">
+  <em>Visualización del agente QL en modo juego (sin entrenamiento).</em>
+</p>
 
 ### Deep Q-Learning ("El Cerebro Artificial")
 
@@ -64,8 +68,6 @@ Imagina que queremos enseñarle a una serpiente digital a jugar al Snake.
     * Aunque el Q-Learning, con su vasto entrenamiento, todavía puede mostrar una media ligeramente superior en tandas de prueba cortas, el **potencial y la eficiencia de aprendizaje del DQN son claramente superiores**. Ya iguala e incluso supera los picos de rendimiento del Q-Learning con una fracción del entrenamiento.
     * El principal desafío para el DQN sigue siendo perfeccionar las estrategias para evitar auto-colisiones a largo plazo. Continuaré el entrenamiento hasta los 100,000 episodios (o más si sigue mejorando) para observar si puede superar consistentemente al Q-Learning y dominar este aspecto del juego. No descarto reiniciar el entrenamiento con hiperparámetros ajustados si se observa un estancamiento persistente más adelante, pero por ahora, ¡la progresión es alentadora!
 
-*Gráficos y visualizaciones del agente DQN:*
-
 <p align="center">
   <img src="/docs/shell-DQN.png" alt="Logs del entrenamiento inicial"/>
 </p>
@@ -77,14 +79,14 @@ Imagina que queremos enseñarle a una serpiente digital a jugar al Snake.
   <img src="/docs/plot-DQN.png" alt="Gráfico de recompensas del entrenamiento DQN" width="70%"/>
 </p>
 <p align="center">
-  <em>Curva de aprendizaje del agente DQN (Puntuación media por episodio). Se aprecia la lenta mejora inicial y la posterior aceleración.</em>
+  <em>Curva de aprendizaje del agente DQN.</em>
 </p>
 
 <p align="center">
-  <img src="/docs/demo-DQN-Log.gif" alt="Log de entrenamiento del agente DQN"/>
+  <img src="/docs/demo-DQN-Log.gif" alt="Visualización del agente DQN en modo juego (sin entrenamiento)"/>
 </p>
 <p align="center">
-  <em>Visualización del entrenamiento del agente DQN.</em>
+  <em>Visualización del agente DQN en modo juego (sin entrenamiento).</em>
 </p>
 
 ## 🚀 Cómo Empezar (Próximamente)
