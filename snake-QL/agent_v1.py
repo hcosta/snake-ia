@@ -110,7 +110,7 @@ class Agent:
 if __name__ == '__main__':
     acciones = [0, 1, 2, 3]
     # .pkl es una extensión común para ficheros pickle
-    ruta_fichero_q_table = "snake_q_table_final.pkl"
+    ruta_fichero_q_table = "trained_data/snake_q_table.pkl"
 
     # Crear un agente
     # Intentará cargar si existe

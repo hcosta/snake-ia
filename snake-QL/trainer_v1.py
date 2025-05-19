@@ -20,7 +20,7 @@ EPSILON_START = 1.0
 EPSILON_DECAY = 0.9999  # Menos % aleatorio, es fatal para el snake
 EPSILON_MIN = 0.000001
 
-Q_TABLE_FILENAME = "snake_q_table_v1.pkl"
+Q_TABLE_FILENAME = "trained_data/snake_q_table_v1.pkl"
 
 # Parámetros de Entrenamiento
 NUM_EPISODES_DEFAULT = 5000

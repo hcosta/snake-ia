@@ -98,7 +98,7 @@ EPSILON_MIN = 0.0000001
 #   Dado que tus scores son altos, un epsilon mínimo muy bajo como el actual parece adecuado
 #   para la fase de explotación.
 
-Q_TABLE_FILENAME = "snake_q_table_v2.pkl"
+Q_TABLE_FILENAME = "trained_data/snake_q_table_v2.pkl"
 
 # Parámetros de Entrenamiento
 NUM_EPISODES_DEFAULT = 5000
