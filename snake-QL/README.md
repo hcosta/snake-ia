@@ -5,8 +5,8 @@ La diferencia entre la versión 1 y 2 es que en la segunda se ha separado la mue
 * Ejecutar una prueba con los datos entrenados:
   
 ```bash
-pipenv run python trainer_v1.py --play
-pipenv run python trainer_v2.py --play
+pipenv run python trainer_v1.py --play --play-speed=0.02
+pipenv run python trainer_v2.py --play --play-speed=0.02
 ```
 
 * Seguir entrenando los datos:

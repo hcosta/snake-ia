@@ -1,6 +1,6 @@
 # Snake IA (Q-Learning vs Deep Q-Learning)
 
-> Un día me aburría y entrené una IA para jugar Snake. ¡Y la cosa se puso interesante!
+> Un día me aburría y entrené una IA (para jugar Snake). ¡Y la cosa se puso interesante!
 
 <table>
   <tr>
@@ -8,8 +8,8 @@
     <td align="center">Deep Q-Learning en Acción</td>
   </tr>
   <tr>
-    <td><img src="/docs/demo-QL.gif" alt="Demostración del Agente Q-Learning"/></td>
-    <td><img src="/docs/demo-DQN.gif" alt="Demostración del Agente Deep Q-Learning"/></td>
+    <td><img src="./docs/demo-QL.gif" alt="Demostración del Agente Q-Learning"/></td>
+    <td><img src="./docs/demo-DQN.gif" alt="Demostración del Agente Deep Q-Learning"/></td>
   </tr>
 </table>
 
@@ -49,9 +49,7 @@ Imagina que queremos enseñarle a una serpiente digital a jugar al Snake.
 * **Conclusión sobre Q-Learning**: Aunque el juego *Snake* parece simple inicialmente (ir hacia la comida), requiere una estrategia considerable a largo plazo para la supervivencia. Los sistemas Q-Learning clásicos, al depender de memorizar cada estado, no parecen ser la herramienta más adecuada para dominar esta complejidad inherente, lo que me motivó a explorar las redes neuronales.
 
 <p align="center">
-  <img src="/docs/demo-QL-Log.gif" alt="isualización del agente QL en modo juego (sin entrenamiento)"/>
-</p>
-<p align="center">
+  <img src="./docs/demo-QL-Log.gif" alt="isualización del agente QL en modo juego (sin entrenamiento)"/>
   <em>Visualización del agente QL en modo juego (sin entrenamiento).</em>
 </p>
 
@@ -69,59 +67,44 @@ Imagina que queremos enseñarle a una serpiente digital a jugar al Snake.
     * El principal desafío para el DQN sigue siendo perfeccionar las estrategias para evitar auto-colisiones a largo plazo. Continuaré el entrenamiento hasta los 100,000 episodios (o más si sigue mejorando) para observar si puede superar consistentemente al Q-Learning y dominar este aspecto del juego. No descarto reiniciar el entrenamiento con hiperparámetros ajustados si se observa un estancamiento persistente más adelante, pero por ahora, ¡la progresión es alentadora!
 
 <p align="center">
-  <img src="/docs/shell-DQN.png" alt="Logs del entrenamiento inicial"/>
-</p>
-<p align="center">
+  <img src="./docs/shell-DQN.png" alt="Logs del entrenamiento inicial"/>
   <em>Logs del entrenamiento tras 8.500 episodios.</em>
 </p>
 
 <p align="center">
-  <img src="/docs/plot-DQN.png" alt="Gráfico de recompensas del entrenamiento DQN" width="70%"/>
-</p>
-<p align="center">
+  <img src="./docs/plot-DQN.png" alt="Gráfico de recompensas del entrenamiento DQN" width="70%"/>
   <em>Curva de aprendizaje del agente DQN.</em>
 </p>
 
 <p align="center">
-  <img src="/docs/demo-DQN-Log.gif" alt="Visualización del agente DQN en modo juego (sin entrenamiento)"/>
-</p>
-<p align="center">
+  <img src="./docs/demo-DQN-Log.gif" alt="Visualización del agente DQN en modo juego (sin entrenamiento)"/>
   <em>Visualización del agente DQN en modo juego (sin entrenamiento).</em>
 </p>
 
-## 🚀 Cómo Empezar (Próximamente)
+## 🚀 Cómo Probar los Agentes
 
-*(Sección a completar: Instrucciones sobre cómo clonar el repositorio, instalar dependencias y ejecutar los scripts de entrenamiento o de juego).*
-
-* **Requisitos**:
-    * Python 3.x
-    * TensorFlow (preferiblemente con soporte GPU)
-    * Arcade
-    * NumPy
-    * Matplotlib
-    * (Opcional para versión shell) `windows-curses` en Windows.
+* **Instalar las dependencias en un entorno virtual, se requiere python 3.11 o editar `python_version` del `Pipfile` manualmente con la versión del sistema**:
+    ```bash
+    pip install pipenv  # si no lo tienes
+    pipenv install
+    ```
 * **Ejecutar el Agente Q-Learning**:
     ```bash
-    pipenv run python trainer_v1.py --play
+    cd snake-QL
+    pipenv run python trainer_v2.py --play --play-speed=0.02
     ```
 * **Ejecutar el Agente DQN**:
     ```bash
-    pipenv run python trainer_v4.py --play
+    cd snake-DQN
+    pipenv run python trainer_v6_parallel.py --play --play-speed=0.02
     ```
-* **Entrenar (ejemplo DQN)**:
+* **Jugar al Snake sin IA en ventana (con Python Arcade)**:
     ```bash
-    # (Dentro de un entorno Docker con GPU si es posible)
-    python trainer_v4.py --episodes 10000 --plot
+    cd snake-DQN
+    pipenv run python snake_ui_v10.py  
     ```
-
-## 💡 Posibles Mejoras Futuras
-
-* Ajustar más finamente los hiperparámetros.
-* Experimentar con diferentes arquitecturas de redes neuronales para el DQN.
-* Implementar técnicas más avanzadas como Dueling DQN o Rainbow.
-* Mejorar la definición del estado para darle a la IA aún más información útil.
-
-## 🙏 Agradecimientos
-
-* A la comunidad de IA por el conocimiento compartido.
-* A `Gemini` por la asistencia en la depuración y la creación de la interfaz de terminal.
+* **Jugar al Snake sin IA en la shell (con módulo Curses)**:
+    ```bash
+    cd snake-DQN
+    pipenv run python snake_shell_v10.py  
+    ```

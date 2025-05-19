@@ -5,6 +5,9 @@ __pycache__/
 Pipfile.lock
 .vscode/
 
+# Este fichero es para el entrenamiento... ocupa mucho espacio
+dqn_snake_checkpoint_6_parallel_train_state.pkl
+
 # C extensions
 *.so
 

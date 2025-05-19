@@ -369,7 +369,7 @@ def play_mode_with_ui(model_keras_path_full, num_episodes, play_speed):
         SCREEN_WIDTH_LOGIC, SCREEN_HEIGHT_LOGIC, STEP_SIZE_LOGIC)
 
     agent_to_play = DQNAgent(state_size=STATE_SIZE, action_size=ACTION_SIZE,
-                             epsilon=0.01, epsilon_min=0.01,
+                             epsilon=0.00001, epsilon_min=0.00001,
                              model_filepath=model_keras_path_full,
                              learning_rate=LEARNING_RATE_DQN_DEFAULT)
 

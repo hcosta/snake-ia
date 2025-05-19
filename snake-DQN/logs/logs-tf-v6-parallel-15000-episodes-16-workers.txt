@@ -1,0 +1,254 @@
+EpG:400/50000 StG:5237(378SPS) S:0 EpsL:0.999 AvgS(100):0.08 Mem:5k TrainS:0k
+EpG:500/50000 StG:6655(873SPS) S:1 EpsL:0.998 AvgS(100):0.09 Mem:6k TrainS:0k
+EpG:600/50000 StG:8030(842SPS) S:0 EpsL:0.997 AvgS(100):0.15 Mem:8k TrainS:0k
+EpG:700/50000 StG:9375(740SPS) S:0 EpsL:0.996 AvgS(100):0.05 Mem:9k TrainS:0k
+EpG:800/50000 StG:10824(1125SPS) S:0 EpsL:0.995 AvgS(100):0.11 Mem:10k TrainS:0k
+EpG:900/50000 StG:12270(855SPS) S:0 EpsL:0.994 AvgS(100):0.07 Mem:12k TrainS:0k
+
+INFO: Guardando checkpoint en episodio global 999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:1000/50000 StG:13512(738SPS) S:0 EpsL:0.993 AvgS(100):0.07 Mem:13k TrainS:0k
+EpG:1100/50000 StG:14967(1178SPS) S:0 EpsL:0.992 AvgS(100):0.07 Mem:14k TrainS:0k
+EpG:1200/50000 StG:16392(916SPS) S:0 EpsL:0.991 AvgS(100):0.07 Mem:16k TrainS:0k
+INFO: Target actualizado y pesos enviados (TS:250). Learner Eps:0.990
+EpG:1300/50000 StG:17746(791SPS) S:0 EpsL:0.990 AvgS(100):0.11 Mem:17k TrainS:0k
+EpG:1400/50000 StG:18848(806SPS) S:0 EpsL:0.989 AvgS(100):0.06 Mem:18k TrainS:0k
+EpG:1500/50000 StG:20242(729SPS) S:0 EpsL:0.988 AvgS(100):0.08 Mem:20k TrainS:0k
+EpG:1600/50000 StG:21404(780SPS) S:0 EpsL:0.987 AvgS(100):0.05 Mem:21k TrainS:0k
+EpG:1700/50000 StG:22708(888SPS) S:0 EpsL:0.986 AvgS(100):0.09 Mem:22k TrainS:0k
+EpG:1800/50000 StG:24106(874SPS) S:0 EpsL:0.985 AvgS(100):0.03 Mem:24k TrainS:0k
+EpG:1900/50000 StG:25569(1134SPS) S:0 EpsL:0.984 AvgS(100):0.07 Mem:25k TrainS:0k
+
+INFO: Guardando checkpoint en episodio global 1999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:2000/50000 StG:26895(921SPS) S:1 EpsL:0.983 AvgS(100):0.10 Mem:26k TrainS:0k
+EpG:2100/50000 StG:28161(729SPS) S:0 EpsL:0.982 AvgS(100):0.07 Mem:28k TrainS:0k
+EpG:2200/50000 StG:29562(848SPS) S:0 EpsL:0.981 AvgS(100):0.07 Mem:29k TrainS:0k
+INFO: Target actualizado y pesos enviados (TS:500). Learner Eps:0.980
+EpG:2300/50000 StG:30877(605SPS) S:0 EpsL:0.980 AvgS(100):0.07 Mem:30k TrainS:0k
+EpG:2400/50000 StG:32093(626SPS) S:0 EpsL:0.978 AvgS(100):0.07 Mem:32k TrainS:0k
+EpG:2500/50000 StG:33579(1031SPS) S:0 EpsL:0.977 AvgS(100):0.09 Mem:33k TrainS:0k
+EpG:2600/50000 StG:34801(956SPS) S:0 EpsL:0.977 AvgS(100):0.06 Mem:34k TrainS:0k
+EpG:2700/50000 StG:36242(770SPS) S:0 EpsL:0.975 AvgS(100):0.07 Mem:36k TrainS:0k
+EpG:2800/50000 StG:37540(1061SPS) S:0 EpsL:0.975 AvgS(100):0.12 Mem:37k TrainS:0k
+EpG:2900/50000 StG:38972(820SPS) S:0 EpsL:0.973 AvgS(100):0.10 Mem:38k TrainS:0k
+
+INFO: Guardando checkpoint en episodio global 2999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:3000/50000 StG:40234(667SPS) S:0 EpsL:0.972 AvgS(100):0.05 Mem:40k TrainS:0k
+EpG:3100/50000 StG:41948(1024SPS) S:0 EpsL:0.971 AvgS(100):0.11 Mem:41k TrainS:0k
+INFO: Target actualizado y pesos enviados (TS:750). Learner Eps:0.970
+EpG:3200/50000 StG:43601(928SPS) S:0 EpsL:0.970 AvgS(100):0.08 Mem:43k TrainS:0k
+EpG:3300/50000 StG:44991(958SPS) S:0 EpsL:0.969 AvgS(100):0.11 Mem:44k TrainS:0k
+EpG:3400/50000 StG:46275(840SPS) S:0 EpsL:0.968 AvgS(100):0.14 Mem:46k TrainS:0k
+EpG:3500/50000 StG:47763(886SPS) S:0 EpsL:0.967 AvgS(100):0.13 Mem:47k TrainS:0k
+EpG:3600/50000 StG:49130(788SPS) S:0 EpsL:0.966 AvgS(100):0.10 Mem:49k TrainS:0k
+EpG:3700/50000 StG:50443(1046SPS) S:0 EpsL:0.965 AvgS(100):0.04 Mem:50k TrainS:0k
+EpG:3800/50000 StG:51716(724SPS) S:0 EpsL:0.964 AvgS(100):0.11 Mem:51k TrainS:0k
+EpG:3900/50000 StG:52980(717SPS) S:0 EpsL:0.963 AvgS(100):0.07 Mem:52k TrainS:0k
+
+INFO: Guardando checkpoint en episodio global 3999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:4000/50000 StG:54387(708SPS) S:0 EpsL:0.962 AvgS(100):0.10 Mem:54k TrainS:0k
+EpG:4100/50000 StG:55836(852SPS) S:0 EpsL:0.961 AvgS(100):0.08 Mem:55k TrainS:0k
+INFO: Target actualizado y pesos enviados (TS:1000). Learner Eps:0.961
+EpG:4200/50000 StG:57229(864SPS) S:0 EpsL:0.960 AvgS(100):0.07 Mem:57k TrainS:1k
+EpG:4300/50000 StG:58652(942SPS) S:0 EpsL:0.959 AvgS(100):0.09 Mem:58k TrainS:1k
+EpG:4400/50000 StG:59981(646SPS) S:0 EpsL:0.958 AvgS(100):0.08 Mem:59k TrainS:1k
+EpG:4500/50000 StG:61335(926SPS) S:0 EpsL:0.957 AvgS(100):0.11 Mem:61k TrainS:1k
+EpG:4600/50000 StG:62828(1087SPS) S:0 EpsL:0.956 AvgS(100):0.12 Mem:62k TrainS:1k
+EpG:4700/50000 StG:64007(659SPS) S:0 EpsL:0.955 AvgS(100):0.08 Mem:64k TrainS:1k
+EpG:4800/50000 StG:65443(762SPS) S:0 EpsL:0.954 AvgS(100):0.14 Mem:65k TrainS:1k
+EpG:4900/50000 StG:66854(913SPS) S:0 EpsL:0.953 AvgS(100):0.06 Mem:66k TrainS:1k
+
+INFO: Guardando checkpoint en episodio global 4999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:5000/50000 StG:68322(645SPS) S:0 EpsL:0.952 AvgS(100):0.09 Mem:68k TrainS:1k
+EpG:5100/50000 StG:69621(883SPS) S:0 EpsL:0.951 AvgS(100):0.12 Mem:69k TrainS:1k
+INFO: Target actualizado y pesos enviados (TS:1250). Learner Eps:0.951
+EpG:5200/50000 StG:71047(866SPS) S:0 EpsL:0.950 AvgS(100):0.11 Mem:71k TrainS:1k
+EpG:5300/50000 StG:72389(729SPS) S:0 EpsL:0.949 AvgS(100):0.11 Mem:72k TrainS:1k
+EpG:5400/50000 StG:73844(914SPS) S:0 EpsL:0.948 AvgS(100):0.10 Mem:73k TrainS:1k
+EpG:5500/50000 StG:75252(709SPS) S:0 EpsL:0.947 AvgS(100):0.12 Mem:75k TrainS:1k
+EpG:5600/50000 StG:76613(650SPS) S:0 EpsL:0.946 AvgS(100):0.13 Mem:76k TrainS:1k
+EpG:5700/50000 StG:78049(700SPS) S:0 EpsL:0.945 AvgS(100):0.08 Mem:78k TrainS:1k
+EpG:5800/50000 StG:79437(861SPS) S:0 EpsL:0.944 AvgS(100):0.07 Mem:79k TrainS:1k
+EpG:5900/50000 StG:80723(1010SPS) S:0 EpsL:0.943 AvgS(100):0.11 Mem:80k TrainS:1k
+
+INFO: Guardando checkpoint en episodio global 5999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:6000/50000 StG:82243(732SPS) S:0 EpsL:0.943 AvgS(100):0.11 Mem:82k TrainS:1k
+INFO: Target actualizado y pesos enviados (TS:1500). Learner Eps:0.942
+EpG:6100/50000 StG:83621(751SPS) S:0 EpsL:0.942 AvgS(100):0.13 Mem:83k TrainS:1k
+EpG:6200/50000 StG:85018(791SPS) S:0 EpsL:0.941 AvgS(100):0.08 Mem:85k TrainS:1k
+EpG:6300/50000 StG:86179(633SPS) S:0 EpsL:0.940 AvgS(100):0.07 Mem:86k TrainS:1k
+EpG:6400/50000 StG:87615(866SPS) S:1 EpsL:0.939 AvgS(100):0.15 Mem:87k TrainS:1k
+EpG:6500/50000 StG:89139(824SPS) S:1 EpsL:0.938 AvgS(100):0.13 Mem:89k TrainS:1k
+EpG:6600/50000 StG:90448(674SPS) S:0 EpsL:0.937 AvgS(100):0.10 Mem:90k TrainS:1k
+EpG:6700/50000 StG:91970(798SPS) S:0 EpsL:0.936 AvgS(100):0.14 Mem:91k TrainS:1k
+EpG:6800/50000 StG:93448(1064SPS) S:1 EpsL:0.935 AvgS(100):0.12 Mem:93k TrainS:1k
+EpG:6900/50000 StG:94856(1039SPS) S:0 EpsL:0.934 AvgS(100):0.15 Mem:94k TrainS:1k
+
+INFO: Guardando checkpoint en episodio global 6999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:7000/50000 StG:96389(726SPS) S:0 EpsL:0.933 AvgS(100):0.15 Mem:96k TrainS:1k
+EpG:7100/50000 StG:97896(1056SPS) S:0 EpsL:0.933 AvgS(100):0.18 Mem:97k TrainS:1k
+INFO: Target actualizado y pesos enviados (TS:1750). Learner Eps:0.932
+EpG:7200/50000 StG:99503(1078SPS) S:0 EpsL:0.932 AvgS(100):0.20 Mem:99k TrainS:1k
+EpG:7300/50000 StG:100975(737SPS) S:0 EpsL:0.931 AvgS(100):0.21 Mem:100k TrainS:1k
+EpG:7400/50000 StG:102507(961SPS) S:1 EpsL:0.930 AvgS(100):0.19 Mem:102k TrainS:1k
+EpG:7500/50000 StG:104131(956SPS) S:0 EpsL:0.929 AvgS(100):0.19 Mem:104k TrainS:1k
+EpG:7600/50000 StG:105668(864SPS) S:0 EpsL:0.928 AvgS(100):0.15 Mem:105k TrainS:1k
+EpG:7700/50000 StG:107166(863SPS) S:0 EpsL:0.927 AvgS(100):0.22 Mem:107k TrainS:1k
+EpG:7800/50000 StG:108830(904SPS) S:0 EpsL:0.926 AvgS(100):0.26 Mem:108k TrainS:1k
+EpG:7900/50000 StG:110355(702SPS) S:0 EpsL:0.925 AvgS(100):0.22 Mem:110k TrainS:1k
+
+INFO: Guardando checkpoint en episodio global 7999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:8000/50000 StG:111940(544SPS) S:0 EpsL:0.924 AvgS(100):0.34 Mem:111k TrainS:1k
+INFO: Target actualizado y pesos enviados (TS:2000). Learner Eps:0.923
+EpG:8100/50000 StG:113615(960SPS) S:0 EpsL:0.923 AvgS(100):0.31 Mem:113k TrainS:2k
+EpG:8200/50000 StG:115020(804SPS) S:0 EpsL:0.922 AvgS(100):0.20 Mem:115k TrainS:2k
+EpG:8300/50000 StG:116671(1281SPS) S:0 EpsL:0.921 AvgS(100):0.27 Mem:116k TrainS:2k
+EpG:8400/50000 StG:118300(831SPS) S:0 EpsL:0.920 AvgS(100):0.25 Mem:118k TrainS:2k
+EpG:8500/50000 StG:119764(782SPS) S:0 EpsL:0.919 AvgS(100):0.22 Mem:119k TrainS:2k
+EpG:8600/50000 StG:121494(982SPS) S:0 EpsL:0.918 AvgS(100):0.21 Mem:121k TrainS:2k
+EpG:8700/50000 StG:122907(913SPS) S:0 EpsL:0.917 AvgS(100):0.22 Mem:122k TrainS:2k
+EpG:8800/50000 StG:124336(743SPS) S:0 EpsL:0.916 AvgS(100):0.18 Mem:124k TrainS:2k
+EpG:8900/50000 StG:125830(974SPS) S:0 EpsL:0.915 AvgS(100):0.22 Mem:125k TrainS:2k
+
+INFO: Guardando checkpoint en episodio global 8999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:9000/50000 StG:127367(490SPS) S:0 EpsL:0.914 AvgS(100):0.22 Mem:127k TrainS:2k
+INFO: Target actualizado y pesos enviados (TS:2250). Learner Eps:0.914
+EpG:9100/50000 StG:128978(923SPS) S:1 EpsL:0.913 AvgS(100):0.25 Mem:128k TrainS:2k
+EpG:9200/50000 StG:130631(952SPS) S:0 EpsL:0.913 AvgS(100):0.35 Mem:130k TrainS:2k
+EpG:9300/50000 StG:132309(658SPS) S:0 EpsL:0.911 AvgS(100):0.25 Mem:132k TrainS:2k
+EpG:9400/50000 StG:133929(747SPS) S:0 EpsL:0.910 AvgS(100):0.26 Mem:133k TrainS:2k
+EpG:9500/50000 StG:135743(1236SPS) S:0 EpsL:0.909 AvgS(100):0.30 Mem:135k TrainS:2k
+EpG:9600/50000 StG:137627(1268SPS) S:1 EpsL:0.909 AvgS(100):0.35 Mem:137k TrainS:2k
+EpG:9700/50000 StG:139265(989SPS) S:0 EpsL:0.908 AvgS(100):0.36 Mem:139k TrainS:2k
+EpG:9800/50000 StG:141132(1353SPS) S:0 EpsL:0.907 AvgS(100):0.36 Mem:141k TrainS:2k
+EpG:9900/50000 StG:143028(916SPS) S:1 EpsL:0.906 AvgS(100):0.39 Mem:143k TrainS:2k
+
+INFO: Guardando checkpoint en episodio global 9999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:10000/50000 StG:144658(489SPS) S:0 EpsL:0.905 AvgS(100):0.33 Mem:144k TrainS:2k
+INFO: Target actualizado y pesos enviados (TS:2500). Learner Eps:0.905
+EpG:10100/50000 StG:146521(881SPS) S:0 EpsL:0.904 AvgS(100):0.36 Mem:146k TrainS:2k
+EpG:10200/50000 StG:148344(880SPS) S:0 EpsL:0.903 AvgS(100):0.37 Mem:148k TrainS:2k
+EpG:10300/50000 StG:150027(837SPS) S:0 EpsL:0.902 AvgS(100):0.40 Mem:150k TrainS:2k
+EpG:10400/50000 StG:151665(1066SPS) S:0 EpsL:0.901 AvgS(100):0.46 Mem:151k TrainS:2k
+EpG:10500/50000 StG:153462(956SPS) S:0 EpsL:0.900 AvgS(100):0.46 Mem:153k TrainS:2k
+EpG:10600/50000 StG:155405(941SPS) S:0 EpsL:0.899 AvgS(100):0.56 Mem:155k TrainS:2k
+EpG:10700/50000 StG:157103(786SPS) S:0 EpsL:0.898 AvgS(100):0.38 Mem:157k TrainS:2k
+EpG:10800/50000 StG:158803(792SPS) S:2 EpsL:0.897 AvgS(100):0.47 Mem:158k TrainS:2k
+EpG:10900/50000 StG:160391(738SPS) S:0 EpsL:0.896 AvgS(100):0.36 Mem:160k TrainS:2k
+INFO: Target actualizado y pesos enviados (TS:2750). Learner Eps:0.896
+
+INFO: Guardando checkpoint en episodio global 10999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:11000/50000 StG:161997(570SPS) S:0 EpsL:0.895 AvgS(100):0.38 Mem:161k TrainS:2k
+EpG:11100/50000 StG:163704(909SPS) S:0 EpsL:0.894 AvgS(100):0.44 Mem:163k TrainS:2k
+EpG:11200/50000 StG:165398(1086SPS) S:1 EpsL:0.894 AvgS(100):0.46 Mem:165k TrainS:2k
+EpG:11300/50000 StG:167125(736SPS) S:0 EpsL:0.893 AvgS(100):0.41 Mem:167k TrainS:2k
+EpG:11400/50000 StG:168933(855SPS) S:1 EpsL:0.892 AvgS(100):0.45 Mem:168k TrainS:2k
+EpG:11500/50000 StG:170814(738SPS) S:0 EpsL:0.890 AvgS(100):0.60 Mem:170k TrainS:2k
+EpG:11600/50000 StG:172765(950SPS) S:1 EpsL:0.889 AvgS(100):0.46 Mem:172k TrainS:2k
+EpG:11700/50000 StG:174396(647SPS) S:0 EpsL:0.888 AvgS(100):0.54 Mem:174k TrainS:2k
+EpG:11800/50000 StG:176210(812SPS) S:0 EpsL:0.887 AvgS(100):0.41 Mem:176k TrainS:2k
+INFO: Target actualizado y pesos enviados (TS:3000). Learner Eps:0.887
+EpG:11900/50000 StG:177987(1017SPS) S:0 EpsL:0.886 AvgS(100):0.49 Mem:177k TrainS:3k
+
+INFO: Guardando checkpoint en episodio global 11999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:12000/50000 StG:179718(492SPS) S:0 EpsL:0.885 AvgS(100):0.44 Mem:179k TrainS:3k
+EpG:12100/50000 StG:181226(709SPS) S:1 EpsL:0.884 AvgS(100):0.36 Mem:181k TrainS:3k
+EpG:12200/50000 StG:183005(756SPS) S:2 EpsL:0.883 AvgS(100):0.48 Mem:183k TrainS:3k
+EpG:12300/50000 StG:184882(986SPS) S:0 EpsL:0.883 AvgS(100):0.44 Mem:184k TrainS:3k
+EpG:12400/50000 StG:186601(766SPS) S:1 EpsL:0.882 AvgS(100):0.45 Mem:186k TrainS:3k
+EpG:12500/50000 StG:188403(799SPS) S:0 EpsL:0.881 AvgS(100):0.56 Mem:188k TrainS:3k
+EpG:12600/50000 StG:190207(734SPS) S:0 EpsL:0.879 AvgS(100):0.53 Mem:190k TrainS:3k
+EpG:12700/50000 StG:192099(737SPS) S:0 EpsL:0.878 AvgS(100):0.49 Mem:192k TrainS:3k
+INFO: Target actualizado y pesos enviados (TS:3250). Learner Eps:0.878
+EpG:12800/50000 StG:193925(978SPS) S:0 EpsL:0.878 AvgS(100):0.59 Mem:193k TrainS:3k
+EpG:12900/50000 StG:195696(1315SPS) S:0 EpsL:0.877 AvgS(100):0.57 Mem:195k TrainS:3k
+
+INFO: Guardando checkpoint en episodio global 12999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:13000/50000 StG:197594(543SPS) S:1 EpsL:0.876 AvgS(100):0.54 Mem:197k TrainS:3k
+EpG:13100/50000 StG:199453(795SPS) S:1 EpsL:0.875 AvgS(100):0.46 Mem:199k TrainS:3k
+EpG:13200/50000 StG:201238(825SPS) S:0 EpsL:0.874 AvgS(100):0.51 Mem:201k TrainS:3k
+EpG:13300/50000 StG:203087(999SPS) S:1 EpsL:0.874 AvgS(100):0.70 Mem:203k TrainS:3k
+EpG:13400/50000 StG:204775(934SPS) S:1 EpsL:0.873 AvgS(100):0.55 Mem:204k TrainS:3k
+EpG:13500/50000 StG:206861(934SPS) S:0 EpsL:0.872 AvgS(100):0.67 Mem:206k TrainS:3k
+EpG:13600/50000 StG:208743(930SPS) S:1 EpsL:0.871 AvgS(100):0.51 Mem:208k TrainS:3k
+EpG:13700/50000 StG:210695(990SPS) S:0 EpsL:0.870 AvgS(100):0.59 Mem:210k TrainS:3k
+INFO: Target actualizado y pesos enviados (TS:3500). Learner Eps:0.869
+EpG:13800/50000 StG:212300(648SPS) S:2 EpsL:0.869 AvgS(100):0.46 Mem:212k TrainS:3k
+EpG:13900/50000 StG:214083(846SPS) S:0 EpsL:0.868 AvgS(100):0.58 Mem:214k TrainS:3k
+
+INFO: Guardando checkpoint en episodio global 13999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:14000/50000 StG:216091(507SPS) S:0 EpsL:0.867 AvgS(100):0.67 Mem:216k TrainS:3k
+EpG:14100/50000 StG:218082(849SPS) S:1 EpsL:0.866 AvgS(100):0.68 Mem:218k TrainS:3k
+EpG:14200/50000 StG:219878(496SPS) S:1 EpsL:0.865 AvgS(100):0.56 Mem:219k TrainS:3k
+EpG:14300/50000 StG:221638(639SPS) S:1 EpsL:0.864 AvgS(100):0.65 Mem:221k TrainS:3k
+EpG:14400/50000 StG:223566(728SPS) S:0 EpsL:0.862 AvgS(100):0.73 Mem:223k TrainS:3k
+EpG:14500/50000 StG:225512(571SPS) S:0 EpsL:0.861 AvgS(100):0.60 Mem:225k TrainS:3k
+INFO: Target actualizado y pesos enviados (TS:3750). Learner Eps:0.861
+EpG:14600/50000 StG:227376(757SPS) S:1 EpsL:0.860 AvgS(100):0.60 Mem:227k TrainS:3k
+EpG:14700/50000 StG:229228(723SPS) S:1 EpsL:0.859 AvgS(100):0.75 Mem:229k TrainS:3k
+EpG:14800/50000 StG:231188(597SPS) S:0 EpsL:0.858 AvgS(100):0.69 Mem:231k TrainS:3k
+EpG:14900/50000 StG:233150(864SPS) S:2 EpsL:0.857 AvgS(100):0.71 Mem:233k TrainS:3k
+
+INFO: Guardando checkpoint en episodio global 14999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:15000/50000 StG:235308(498SPS) S:1 EpsL:0.856 AvgS(100):0.66 Mem:235k TrainS:3k
+EpG:15100/50000 StG:237158(766SPS) S:0 EpsL:0.855 AvgS(100):0.65 Mem:237k TrainS:3k
+EpG:15200/50000 StG:238980(862SPS) S:0 EpsL:0.854 AvgS(100):0.61 Mem:238k TrainS:3k
+EpG:15300/50000 StG:240634(582SPS) S:1 EpsL:0.853 AvgS(100):0.68 Mem:240k TrainS:3k
+INFO: Target actualizado y pesos enviados (TS:4000). Learner Eps:0.852
+EpG:15400/50000 StG:242559(792SPS) S:2 EpsL:0.852 AvgS(100):0.64 Mem:242k TrainS:4k
+EpG:15500/50000 StG:244584(601SPS) S:1 EpsL:0.851 AvgS(100):0.98 Mem:244k TrainS:4k
+EpG:15600/50000 StG:246553(760SPS) S:0 EpsL:0.850 AvgS(100):0.73 Mem:246k TrainS:4k
+EpG:15700/50000 StG:248568(895SPS) S:0 EpsL:0.849 AvgS(100):0.63 Mem:248k TrainS:4k
+EpG:15800/50000 StG:250408(812SPS) S:0 EpsL:0.848 AvgS(100):0.70 Mem:250k TrainS:4k
+EpG:15900/50000 StG:252367(796SPS) S:0 EpsL:0.847 AvgS(100):0.61 Mem:252k TrainS:4k
+
+INFO: Guardando checkpoint en episodio global 15999...
+INFO: Modelo Keras guardado en trained_data/dqn_snake_checkpoint_6_parallel.keras
+INFO: Checkpoint guardado.
+
+EpG:16000/50000 StG:254333(444SPS) S:0 EpsL:0.846 AvgS(100):0.67 Mem:254k TrainS:4k
+
