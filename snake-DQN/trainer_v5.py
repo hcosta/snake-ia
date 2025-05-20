@@ -6,7 +6,7 @@ Correcciones de la versión 5
 * Se ha modificado los scripts agent_v4.py y trainer_v4.py para usar el método recomendado de Keras para guardar y cargar modelos completos (model.save() y tf.keras.models.load_model())
 * Se ha implementado numba y compilación jit para optimizar la lógica del juego y el estado del agente.
 * Además se guarda el estado del entrenamiento para continuar desde el último episodio excepto si se hace un reset.
-* La velocidad de entrenamiento ha mejorado más de 10 veces en comparación con la versión 4.
+* La velocidad de entrenamiento ha mejorado más de 5 veces en comparación con la versión 4.
 """
 import matplotlib as mpl
 from agent_v5 import DQNAgent, AGENT_VERSION, DATA_DIR

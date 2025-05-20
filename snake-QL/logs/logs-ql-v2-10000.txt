@@ -1,0 +1,122 @@
+C:\Users\hcost\Desktop\Snake IA\snake-QL>pipenv run python trainer_v1.py --no-visualize --reset --episodes=10000 
+Se ha eliminado 'trained_data/snake_q_table_v1.pkl' para reiniciar el entrenamiento.
+Fichero de Tabla Q no encontrado en trained_data/snake_q_table_v1.pkl. Se usará una tabla vacía y epsilon inicial.
+Epsilon reiniciado a: 1.0000 debido a --reset.
+Iniciando entrenamiento para 10000 episodios...
+Visualización: Desactivada
+Ep: 100/10000 | Steps: 1 | Score: 0 | Total Reward: -100.0 | Epsilon: 0.9048 | Avg Score (actual): 1.10
+Ep: 200/10000 | Steps: 1 | Score: 0 | Total Reward: -100.0 | Epsilon: 0.8186 | Avg Score (actual): 2.00
+Ep: 300/10000 | Steps: 5 | Score: 10 | Total Reward: -70.0 | Epsilon: 0.7407 | Avg Score (actual): 4.20
+Ep: 400/10000 | Steps: 1 | Score: 0 | Total Reward: -100.0 | Epsilon: 0.6702 | Avg Score (actual): 5.70
+Ep: 500/10000 | Steps: 41 | Score: 30 | Total Reward: -10.0 | Epsilon: 0.6064 | Avg Score (actual): 9.90
+Ep: 600/10000 | Steps: 18 | Score: 10 | Total Reward: -70.0 | Epsilon: 0.5486 | Avg Score (actual): 13.00
+Ep: 700/10000 | Steps: 47 | Score: 30 | Total Reward: -10.0 | Epsilon: 0.4964 | Avg Score (actual): 11.40
+Ep: 800/10000 | Steps: 22 | Score: 20 | Total Reward: -40.0 | Epsilon: 0.4491 | Avg Score (actual): 16.80
+Ep: 900/10000 | Steps: 43 | Score: 40 | Total Reward: 20.0 | Epsilon: 0.4064 | Avg Score (actual): 15.80
+Ep: 1000/10000 | Steps: 22 | Score: 30 | Total Reward: -10.0 | Epsilon: 0.3677 | Avg Score (actual): 22.00
+Tabla Q y epsilon guardados en trained_data/snake_q_table_v1.pkl
+Ep: 1100/10000 | Steps: 1 | Score: 0 | Total Reward: -100.0 | Epsilon: 0.3327 | Avg Score (actual): 25.00
+Ep: 1200/10000 | Steps: 1 | Score: 0 | Total Reward: -100.0 | Epsilon: 0.3010 | Avg Score (actual): 24.10
+Ep: 1300/10000 | Steps: 9 | Score: 0 | Total Reward: -100.0 | Epsilon: 0.2724 | Avg Score (actual): 31.80
+Ep: 1400/10000 | Steps: 38 | Score: 60 | Total Reward: 80.0 | Epsilon: 0.2464 | Avg Score (actual): 35.80
+Ep: 1500/10000 | Steps: 14 | Score: 20 | Total Reward: -40.0 | Epsilon: 0.2230 | Avg Score (actual): 42.60
+Ep: 1600/10000 | Steps: 38 | Score: 30 | Total Reward: -10.0 | Epsilon: 0.2017 | Avg Score (actual): 50.80
+Ep: 1700/10000 | Steps: 30 | Score: 10 | Total Reward: -70.0 | Epsilon: 0.1825 | Avg Score (actual): 47.80
+Ep: 1800/10000 | Steps: 93 | Score: 80 | Total Reward: 139.9 | Epsilon: 0.1652 | Avg Score (actual): 53.90
+Ep: 1900/10000 | Steps: 140 | Score: 140 | Total Reward: 319.9 | Epsilon: 0.1494 | Avg Score (actual): 65.80
+Ep: 2000/10000 | Steps: 44 | Score: 50 | Total Reward: 50.0 | Epsilon: 0.1352 | Avg Score (actual): 69.90
+Tabla Q y epsilon guardados en trained_data/snake_q_table_v1.pkl
+Ep: 2100/10000 | Steps: 58 | Score: 70 | Total Reward: 109.9 | Epsilon: 0.1223 | Avg Score (actual): 71.70
+Ep: 2200/10000 | Steps: 67 | Score: 90 | Total Reward: 169.9 | Epsilon: 0.1107 | Avg Score (actual): 68.50
+Ep: 2300/10000 | Steps: 154 | Score: 190 | Total Reward: 469.8 | Epsilon: 0.1001 | Avg Score (actual): 92.20
+Ep: 2400/10000 | Steps: 266 | Score: 250 | Total Reward: 649.7 | Epsilon: 0.0906 | Avg Score (actual): 88.30
+Ep: 2500/10000 | Steps: 6 | Score: 0 | Total Reward: -100.0 | Epsilon: 0.0820 | Avg Score (actual): 96.10
+Ep: 2600/10000 | Steps: 10 | Score: 10 | Total Reward: -70.0 | Epsilon: 0.0742 | Avg Score (actual): 96.80
+Ep: 2700/10000 | Steps: 1 | Score: 0 | Total Reward: -100.0 | Epsilon: 0.0671 | Avg Score (actual): 117.80
+Ep: 2800/10000 | Steps: 114 | Score: 100 | Total Reward: 199.9 | Epsilon: 0.0607 | Avg Score (actual): 116.80
+Ep: 2900/10000 | Steps: 64 | Score: 80 | Total Reward: 139.9 | Epsilon: 0.0549 | Avg Score (actual): 110.10
+Ep: 3000/10000 | Steps: 144 | Score: 140 | Total Reward: 319.9 | Epsilon: 0.0497 | Avg Score (actual): 110.80
+Tabla Q y epsilon guardados en trained_data/snake_q_table_v1.pkl
+Ep: 3100/10000 | Steps: 151 | Score: 150 | Total Reward: 349.8 | Epsilon: 0.0450 | Avg Score (actual): 126.80
+Ep: 3200/10000 | Steps: 230 | Score: 250 | Total Reward: 649.8 | Epsilon: 0.0407 | Avg Score (actual): 135.00
+Ep: 3300/10000 | Steps: 193 | Score: 190 | Total Reward: 469.8 | Epsilon: 0.0368 | Avg Score (actual): 138.70
+Ep: 3400/10000 | Steps: 244 | Score: 230 | Total Reward: 589.8 | Epsilon: 0.0333 | Avg Score (actual): 138.70
+Ep: 3500/10000 | Steps: 169 | Score: 200 | Total Reward: 499.8 | Epsilon: 0.0301 | Avg Score (actual): 134.80
+Ep: 3600/10000 | Steps: 183 | Score: 180 | Total Reward: 439.8 | Epsilon: 0.0273 | Avg Score (actual): 153.80
+Ep: 3700/10000 | Steps: 281 | Score: 250 | Total Reward: 649.7 | Epsilon: 0.0247 | Avg Score (actual): 153.30
+Ep: 3800/10000 | Steps: 119 | Score: 130 | Total Reward: 289.9 | Epsilon: 0.0223 | Avg Score (actual): 160.40
+Ep: 3900/10000 | Steps: 167 | Score: 180 | Total Reward: 439.8 | Epsilon: 0.0202 | Avg Score (actual): 169.40
+Ep: 4000/10000 | Steps: 118 | Score: 140 | Total Reward: 319.9 | Epsilon: 0.0183 | Avg Score (actual): 169.30
+Tabla Q y epsilon guardados en trained_data/snake_q_table_v1.pkl
+Ep: 4100/10000 | Steps: 114 | Score: 120 | Total Reward: 259.9 | Epsilon: 0.0165 | Avg Score (actual): 157.40
+Ep: 4200/10000 | Steps: 90 | Score: 110 | Total Reward: 229.9 | Epsilon: 0.0150 | Avg Score (actual): 167.60
+Ep: 4300/10000 | Steps: 89 | Score: 100 | Total Reward: 199.9 | Epsilon: 0.0135 | Avg Score (actual): 163.20
+Ep: 4400/10000 | Steps: 120 | Score: 140 | Total Reward: 319.9 | Epsilon: 0.0123 | Avg Score (actual): 176.80
+Ep: 4500/10000 | Steps: 188 | Score: 190 | Total Reward: 469.8 | Epsilon: 0.0111 | Avg Score (actual): 185.30
+Ep: 4600/10000 | Steps: 136 | Score: 140 | Total Reward: 319.9 | Epsilon: 0.0100 | Avg Score (actual): 183.50
+Ep: 4700/10000 | Steps: 6 | Score: 0 | Total Reward: -100.0 | Epsilon: 0.0091 | Avg Score (actual): 178.20
+Ep: 4800/10000 | Steps: 111 | Score: 110 | Total Reward: 229.9 | Epsilon: 0.0082 | Avg Score (actual): 194.10
+Ep: 4900/10000 | Steps: 348 | Score: 320 | Total Reward: 859.7 | Epsilon: 0.0074 | Avg Score (actual): 194.60
+Ep: 5000/10000 | Steps: 153 | Score: 170 | Total Reward: 409.8 | Epsilon: 0.0067 | Avg Score (actual): 221.70
+Tabla Q y epsilon guardados en trained_data/snake_q_table_v1.pkl
+Ep: 5100/10000 | Steps: 91 | Score: 110 | Total Reward: 229.9 | Epsilon: 0.0061 | Avg Score (actual): 203.40
+Ep: 5200/10000 | Steps: 294 | Score: 280 | Total Reward: 739.7 | Epsilon: 0.0055 | Avg Score (actual): 193.80
+Ep: 5300/10000 | Steps: 267 | Score: 280 | Total Reward: 739.7 | Epsilon: 0.0050 | Avg Score (actual): 187.40
+Ep: 5400/10000 | Steps: 163 | Score: 190 | Total Reward: 469.8 | Epsilon: 0.0045 | Avg Score (actual): 195.30
+Ep: 5500/10000 | Steps: 165 | Score: 190 | Total Reward: 469.8 | Epsilon: 0.0041 | Avg Score (actual): 175.50
+Ep: 5600/10000 | Steps: 162 | Score: 160 | Total Reward: 379.8 | Epsilon: 0.0037 | Avg Score (actual): 176.40
+Ep: 5700/10000 | Steps: 55 | Score: 60 | Total Reward: 79.9 | Epsilon: 0.0033 | Avg Score (actual): 194.10
+Ep: 5800/10000 | Steps: 196 | Score: 190 | Total Reward: 469.8 | Epsilon: 0.0030 | Avg Score (actual): 209.00
+Ep: 5900/10000 | Steps: 223 | Score: 220 | Total Reward: 559.8 | Epsilon: 0.0027 | Avg Score (actual): 221.20
+Ep: 6000/10000 | Steps: 336 | Score: 280 | Total Reward: 739.7 | Epsilon: 0.0025 | Avg Score (actual): 204.10
+Tabla Q y epsilon guardados en trained_data/snake_q_table_v1.pkl
+Ep: 6100/10000 | Steps: 214 | Score: 210 | Total Reward: 529.8 | Epsilon: 0.0022 | Avg Score (actual): 192.30
+Ep: 6200/10000 | Steps: 114 | Score: 150 | Total Reward: 349.9 | Epsilon: 0.0020 | Avg Score (actual): 205.70
+Ep: 6300/10000 | Steps: 381 | Score: 390 | Total Reward: 1069.6 | Epsilon: 0.0018 | Avg Score (actual): 221.00
+Ep: 6400/10000 | Steps: 192 | Score: 240 | Total Reward: 619.8 | Epsilon: 0.0017 | Avg Score (actual): 194.20
+Ep: 6500/10000 | Steps: 216 | Score: 200 | Total Reward: 499.8 | Epsilon: 0.0015 | Avg Score (actual): 191.90
+Ep: 6600/10000 | Steps: 150 | Score: 180 | Total Reward: 439.9 | Epsilon: 0.0014 | Avg Score (actual): 181.80
+Ep: 6700/10000 | Steps: 216 | Score: 210 | Total Reward: 529.8 | Epsilon: 0.0012 | Avg Score (actual): 213.90
+Ep: 6800/10000 | Steps: 171 | Score: 180 | Total Reward: 439.8 | Epsilon: 0.0011 | Avg Score (actual): 197.00
+Ep: 6900/10000 | Steps: 60 | Score: 70 | Total Reward: 109.9 | Epsilon: 0.0010 | Avg Score (actual): 204.10
+Ep: 7000/10000 | Steps: 188 | Score: 150 | Total Reward: 349.8 | Epsilon: 0.0009 | Avg Score (actual): 197.20
+Tabla Q y epsilon guardados en trained_data/snake_q_table_v1.pkl
+Ep: 7100/10000 | Steps: 255 | Score: 260 | Total Reward: 679.7 | Epsilon: 0.0008 | Avg Score (actual): 215.00
+Ep: 7200/10000 | Steps: 324 | Score: 310 | Total Reward: 829.7 | Epsilon: 0.0007 | Avg Score (actual): 237.40
+Ep: 7300/10000 | Steps: 349 | Score: 440 | Total Reward: 1219.7 | Epsilon: 0.0007 | Avg Score (actual): 211.40
+Ep: 7400/10000 | Steps: 317 | Score: 320 | Total Reward: 859.7 | Epsilon: 0.0006 | Avg Score (actual): 195.60
+Ep: 7500/10000 | Steps: 239 | Score: 280 | Total Reward: 739.8 | Epsilon: 0.0006 | Avg Score (actual): 205.50
+Ep: 7600/10000 | Steps: 121 | Score: 150 | Total Reward: 349.9 | Epsilon: 0.0005 | Avg Score (actual): 207.30
+Ep: 7700/10000 | Steps: 190 | Score: 180 | Total Reward: 439.8 | Epsilon: 0.0005 | Avg Score (actual): 223.70
+Ep: 7800/10000 | Steps: 101 | Score: 120 | Total Reward: 259.9 | Epsilon: 0.0004 | Avg Score (actual): 240.40
+Ep: 7900/10000 | Steps: 219 | Score: 210 | Total Reward: 529.8 | Epsilon: 0.0004 | Avg Score (actual): 222.70
+Ep: 8000/10000 | Steps: 300 | Score: 240 | Total Reward: 619.7 | Epsilon: 0.0003 | Avg Score (actual): 203.70
+Tabla Q y epsilon guardados en trained_data/snake_q_table_v1.pkl
+Ep: 8100/10000 | Steps: 216 | Score: 280 | Total Reward: 739.8 | Epsilon: 0.0003 | Avg Score (actual): 217.00
+Ep: 8200/10000 | Steps: 338 | Score: 280 | Total Reward: 739.7 | Epsilon: 0.0003 | Avg Score (actual): 216.90
+Ep: 8300/10000 | Steps: 116 | Score: 150 | Total Reward: 349.9 | Epsilon: 0.0002 | Avg Score (actual): 211.80
+Ep: 8400/10000 | Steps: 302 | Score: 270 | Total Reward: 709.7 | Epsilon: 0.0002 | Avg Score (actual): 206.50
+Ep: 8500/10000 | Steps: 156 | Score: 120 | Total Reward: 259.8 | Epsilon: 0.0002 | Avg Score (actual): 200.30
+Ep: 8600/10000 | Steps: 125 | Score: 150 | Total Reward: 349.9 | Epsilon: 0.0002 | Avg Score (actual): 218.00
+Ep: 8700/10000 | Steps: 98 | Score: 120 | Total Reward: 259.9 | Epsilon: 0.0002 | Avg Score (actual): 205.50
+Ep: 8800/10000 | Steps: 184 | Score: 220 | Total Reward: 559.8 | Epsilon: 0.0002 | Avg Score (actual): 211.20
+Ep: 8900/10000 | Steps: 149 | Score: 160 | Total Reward: 379.9 | Epsilon: 0.0001 | Avg Score (actual): 196.80
+Ep: 9000/10000 | Steps: 116 | Score: 140 | Total Reward: 319.9 | Epsilon: 0.0001 | Avg Score (actual): 209.50
+Tabla Q y epsilon guardados en trained_data/snake_q_table_v1.pkl
+Ep: 9100/10000 | Steps: 84 | Score: 100 | Total Reward: 199.9 | Epsilon: 0.0001 | Avg Score (actual): 190.00
+Ep: 9200/10000 | Steps: 102 | Score: 130 | Total Reward: 289.9 | Epsilon: 0.0001 | Avg Score (actual): 206.90
+Ep: 9300/10000 | Steps: 357 | Score: 340 | Total Reward: 919.6 | Epsilon: 0.0001 | Avg Score (actual): 215.80
+Ep: 9400/10000 | Steps: 267 | Score: 240 | Total Reward: 619.7 | Epsilon: 0.0001 | Avg Score (actual): 214.40
+Ep: 9500/10000 | Steps: 206 | Score: 230 | Total Reward: 589.8 | Epsilon: 0.0001 | Avg Score (actual): 188.90
+Ep: 9600/10000 | Steps: 72 | Score: 80 | Total Reward: 139.9 | Epsilon: 0.0001 | Avg Score (actual): 198.40
+Ep: 9700/10000 | Steps: 410 | Score: 320 | Total Reward: 859.6 | Epsilon: 0.0001 | Avg Score (actual): 207.60
+Ep: 9800/10000 | Steps: 179 | Score: 200 | Total Reward: 499.8 | Epsilon: 0.0001 | Avg Score (actual): 220.20
+Ep: 9900/10000 | Steps: 286 | Score: 260 | Total Reward: 679.7 | Epsilon: 0.0000 | Avg Score (actual): 219.30
+Ep: 10000/10000 | Steps: 134 | Score: 150 | Total Reward: 349.9 | Epsilon: 0.0000 | Avg Score (actual): 218.50
+Tabla Q y epsilon guardados en trained_data/snake_q_table_v1.pkl
+
+Entrenamiento finalizado. Se completaron 10000 episodios en esta sesión.
+Duración total de la sesión: 0.46 minutos.
+Total de pasos ejecutados en la sesión: 1512044
+Tabla Q y epsilon guardados en trained_data/snake_q_table_v1.pkl
+Tabla Q final (o de progreso) guardada en: trained_data/snake_q_table_v1.pkl
