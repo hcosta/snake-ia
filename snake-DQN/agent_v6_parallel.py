@@ -1,6 +1,6 @@
 # agent_v6_parallel.py
-# Basado en agent_v5.py, manteniendo la arquitectura Sequential.
-# El objetivo es usar este agente con un trainer paralelizado.
+# Basado en agent_v6.py, para ser usado con un trainer paralelizado.
+# STATE_SIZE es 12.
 
 import os
 import random
@@ -8,16 +8,26 @@ import numpy as np
 from collections import deque
 
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
-# TF_CPP_MIN_LOG_LEVEL se establecerá en trainer_v6_parallel.py
+# TF_CPP_MIN_LOG_LEVEL se establecerá en el trainer_v6_parallel.py
 
-if 1:  # Bloque para facilitar el plegado
+# Condicional para evitar error si TensorFlow no está disponible (aunque es necesario)
+try:
     import tensorflow as tf
     from tensorflow.keras.optimizers import Adam
     from tensorflow.keras.layers import Dense, Input
     from tensorflow.keras.models import Sequential, load_model as keras_load_model
+except ImportError:
+    print("Advertencia: TensorFlow/Keras no encontrado. DQNAgent no funcionará.")
+    tf = None
+    keras_load_model = None
+    Sequential = None
+    Dense = None
+    Input = None
+    Adam = None
 
-AGENT_VERSION = "6_parallel"  # Nueva versión para estos archivos
-DATA_DIR = "trained_data"
+
+AGENT_VERSION = "6_parallel"  # Nueva versión para estos archivos paralelos
+DATA_DIR = "trained_data"  # Directorio donde se guardan los modelos
 
 
 class DQNAgent:
@@ -25,10 +35,14 @@ class DQNAgent:
                  epsilon=1.0, epsilon_decay_rate=0.9995,
                  epsilon_min=0.01,
                  replay_memory_size=20000, batch_size=64,
-                 model_filepath=f'{DATA_DIR}/dqn_snake_default_agent_{AGENT_VERSION}.keras',
+                 model_filepath=None,
                  epochs_per_replay=1):
 
-        self.state_size = state_size
+        if tf is None:
+            raise ImportError(
+                "TensorFlow no está instalado o no se pudo importar. DQNAgent no puede funcionar.")
+
+        self.state_size = state_size  # Debería ser 12 para v6
         self.action_size = action_size
         self.gamma = discount_factor
         self.epsilon = epsilon
@@ -37,7 +51,13 @@ class DQNAgent:
         self.epsilon_min = epsilon_min
         self.learning_rate = learning_rate
         self.batch_size = batch_size
-        self.model_filepath = model_filepath  # Trainer pasará el path correcto
+
+        if model_filepath is None:
+            self.model_filepath = os.path.join(
+                DATA_DIR, f'dqn_snake_default_agent_{AGENT_VERSION}.keras')
+        else:
+            self.model_filepath = model_filepath
+
         self.epochs_per_replay = epochs_per_replay
         self.memory = deque(maxlen=replay_memory_size)
         self.replay_memory_capacity = replay_memory_size
@@ -50,19 +70,19 @@ class DQNAgent:
                 print(
                     f"WARN: No se pudo crear directorio {model_dir} desde DQNAgent: {e}")
 
-        # Lógica de carga del modelo Keras (de agent_v5.py, robusta para Sequential)
+        # Lógica de carga/creación del modelo Keras (similar a agent_v6.py)
         if os.path.exists(self.model_filepath):
             print(
                 f"INFO: Intentando cargar modelo Keras desde: {self.model_filepath}")
             try:
-                self.model = keras_load_model(self.model_filepath)
+                self.model = keras_load_model(
+                    self.model_filepath, compile=True)
                 print(
                     f"INFO: Modelo Keras cargado exitosamente desde {self.model_filepath}")
-            except ValueError as ve:  # Manejo de error para jit_compile en optimizadores guardados
-                if "Argument(s) not recognized" in str(ve) and \
-                   ("jit_compile" in str(ve) or "is_legacy_optimizer" in str(ve)):
+            except ValueError as ve:
+                if "jit_compile" in str(ve) or "is_legacy_optimizer" in str(ve) or "Unable to restore custom metric" in str(ve) or "optimizer" in str(ve).lower():
                     print(
-                        f"WARN: Error de optimizador al cargar (jit_compile/is_legacy): {ve}")
+                        f"WARN: Error específico al cargar (posiblemente optimizador/jit_compile): {ve}")
                     print(
                         "INFO: Intentando cargar arquitectura/pesos y recompilando...")
                     try:
@@ -94,12 +114,11 @@ class DQNAgent:
         self.update_target_model()
 
     def _build_model(self):
-        # Modelo Sequential, igual que en agent_v5.py
+        # Modelo Sequential, igual que en agent_v6.py
         model = Sequential([
-            Input(shape=(self.state_size,)),
+            Input(shape=(self.state_size,)),  # state_size será 12
             Dense(512, activation='relu', dtype='float32'),
             Dense(512, activation='relu', dtype='float32'),
-            # Arquitectura de v5
             Dense(256, activation='relu', dtype='float32'),
             Dense(self.action_size, activation='linear', dtype='float32')
         ])
@@ -143,17 +162,16 @@ class DQNAgent:
         dones_np = np.array([experience[4]
                             for experience in minibatch], dtype=bool)
 
-        q_values_current_state = self.model.predict_on_batch(states_np)
+        q_values_current_state_main_model = self.model.predict_on_batch(
+            states_np)
         q_values_next_state_target_model = self.target_model.predict_on_batch(
             next_states_np)
 
-        q_targets_batch_np = q_values_current_state.numpy() if hasattr(
-            q_values_current_state, 'numpy') else np.copy(q_values_current_state)
+        q_targets_batch_np = q_values_current_state_main_model.numpy() if hasattr(
+            q_values_current_state_main_model, 'numpy') else np.copy(q_values_current_state_main_model)
 
-        q_next_state_eval_np = q_values_next_state_target_model.numpy() if hasattr(
-            q_values_next_state_target_model, 'numpy') else np.copy(q_values_next_state_target_model)
-
-        q_values_next_max_np = np.amax(q_next_state_eval_np, axis=1)
+        q_values_next_max_np = np.amax(
+            q_values_next_state_target_model, axis=1)
 
         updated_q_values_for_actions_taken = rewards_np + \
             self.gamma * q_values_next_max_np * (~dones_np)
@@ -163,11 +181,30 @@ class DQNAgent:
         q_targets_batch_np[batch_indices,
                            actions_np] = updated_q_values_for_actions_taken
 
+        # Usar tf.data.Dataset para eficiencia (como en agent_v6)
+        # Nota: agent_v5_parallel.py usa model.fit(states_np, q_targets_batch_np, ...)
+        # agent_v6.py (y agent_v5.py) usa tf.data.Dataset.from_tensor_slices luego .batch()
+        # Para consistencia con agent_v6.py, usamos el Dataset approach.
+        # Sin embargo, agent_v5_parallel's replay fed the entire batch directly.
+        # Let's align with agent_v6 structure which uses .from_tensor_slices -> .batch()
+        # Re-evaluating: agent_v5.py / agent_v6.py uses .from_tensors((states_np, q_targets_batch_np))
+        # not .from_tensor_slices if we already have the full batch.
+        # agent_v5_parallel's self.model.fit(train_dataset, ...) where train_dataset is
+        # already batched by prefetch.
+        # The original agent_v6.py had:
+        # train_dataset = tf.data.Dataset.from_tensor_slices((states_np, q_targets_batch_np))
+        # train_dataset = train_dataset.batch(self.batch_size).prefetch(...)
+        # This is redundant if states_np *is* the batch.
+        # agent_v5.py and agent_v5_parallel.py were more direct:
+        # train_dataset = tf.data.Dataset.from_tensors((states_np, q_targets_batch_np))
+        # train_dataset = train_dataset.prefetch(buffer_size=tf.data.AUTOTUNE)
+        # self.model.fit(train_dataset, epochs=self.epochs_per_replay, verbose=0)
+        # This seems more correct. Let's use this.
+
         train_dataset = tf.data.Dataset.from_tensors(
             (states_np, q_targets_batch_np))
         train_dataset = train_dataset.prefetch(buffer_size=tf.data.AUTOTUNE)
 
-        # Añadido batch_size aquí por consistencia
         self.model.fit(train_dataset, epochs=self.epochs_per_replay, verbose=0)
 
     def save_keras_model(self):
@@ -176,7 +213,7 @@ class DQNAgent:
             try:
                 os.makedirs(model_dir, exist_ok=True)
             except OSError as e:
-                if not os.path.isdir(model_dir):
+                if not os.path.isdir(model_dir):  # Double check
                     print(
                         f"ERROR: Creando dir {model_dir} en save_keras_model: {e}")
                     return
