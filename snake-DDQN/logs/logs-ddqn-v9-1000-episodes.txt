@@ -1,0 +1,373 @@
+Ep 1: Juego terminado por estancamiento tras 601 pasos sin comer.
+Ep (Global): 1/1000 (Sesión: 1) | Steps: 601 | Score:   0 | Total Reward Ep:  -35.1 | Epsilon: 0.9900 | Avg Score (100ep):   0.00 | Memory:     601
+Ep (Global): 2/1000 (Sesión: 2) | Steps: 167 | Score:   0 | Total Reward Ep:  -14.3 | Epsilon: 0.9800 | Avg Score (100ep):   0.00 | Memory:     768
+Ep 3: Juego terminado por estancamiento tras 601 pasos sin comer.
+Ep (Global): 3/1000 (Sesión: 3) | Steps: 601 | Score:   0 | Total Reward Ep:  -35.1 | Epsilon: 0.9700 | Avg Score (100ep):   0.00 | Memory:    1369
+Ep 4: Juego terminado por estancamiento tras 601 pasos sin comer.
+Ep (Global): 4/1000 (Sesión: 4) | Steps: 601 | Score:   0 | Total Reward Ep:  -35.1 | Epsilon: 0.9600 | Avg Score (100ep):   0.00 | Memory:    1970
+Ep 5: Juego terminado por estancamiento tras 601 pasos sin comer.
+Ep (Global): 5/1000 (Sesión: 5) | Steps: 601 | Score:   0 | Total Reward Ep:  -35.1 | Epsilon: 0.9500 | Avg Score (100ep):   0.00 | Memory:    2571
+Ep (Global): 6/1000 (Sesión: 6) | Steps: 337 | Score:   4 | Total Reward Ep:   57.1 | Epsilon: 0.9400 | Avg Score (100ep):   0.67 | Memory:    2908
+Ep (Global): 7/1000 (Sesión: 7) | Steps: 1200 | Score:   4 | Total Reward Ep:   20.0 | Epsilon: 0.9300 | Avg Score (100ep):   1.14 | Memory:    4108
+Ep (Global): 8/1000 (Sesión: 8) | Steps: 670 | Score:   2 | Total Reward Ep:    0.5 | Epsilon: 0.9200 | Avg Score (100ep):   1.25 | Memory:    4778
+Ep (Global): 9/1000 (Sesión: 9) | Steps: 347 | Score:   1 | Total Reward Ep:   -3.4 | Epsilon: 0.9100 | Avg Score (100ep):   1.22 | Memory:    5125
+Ep 10: Juego terminado por estancamiento tras 601 pasos sin comer.
+Ep (Global): 10/1000 (Sesión: 10) | Steps: 847 | Score:   1 | Total Reward Ep:  -27.4 | Epsilon: 0.9000 | Avg Score (100ep):   1.20 | Memory:    5972
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 10
+Ep (Global): 11/1000 (Sesión: 11) | Steps: 1200 | Score:   4 | Total Reward Ep:   20.0 | Epsilon: 0.8900 | Avg Score (100ep):   1.45 | Memory:    7172
+Ep (Global): 12/1000 (Sesión: 12) | Steps: 1200 | Score:   2 | Total Reward Ep:  -20.0 | Epsilon: 0.8800 | Avg Score (100ep):   1.50 | Memory:    8372
+Ep 13: Juego terminado por estancamiento tras 601 pasos sin comer.
+Ep (Global): 13/1000 (Sesión: 13) | Steps: 601 | Score:   0 | Total Reward Ep:  -35.1 | Epsilon: 0.8700 | Avg Score (100ep):   1.38 | Memory:    8973
+Ep (Global): 14/1000 (Sesión: 14) | Steps: 687 | Score:   5 | Total Reward Ep:   59.7 | Epsilon: 0.8600 | Avg Score (100ep):   1.64 | Memory:    9660
+Ep (Global): 15/1000 (Sesión: 15) | Steps: 1098 | Score:   6 | Total Reward Ep:   59.1 | Epsilon: 0.8500 | Avg Score (100ep):   1.93 | Memory:   10758
+Ep (Global): 16/1000 (Sesión: 16) | Steps: 527 | Score:   3 | Total Reward Ep:   27.7 | Epsilon: 0.8400 | Avg Score (100ep):   2.00 | Memory:   11285
+Ep (Global): 17/1000 (Sesión: 17) | Steps: 908 | Score:   5 | Total Reward Ep:   48.6 | Epsilon: 0.8300 | Avg Score (100ep):   2.18 | Memory:   12193
+Ep (Global): 18/1000 (Sesión: 18) | Steps: 710 | Score:   6 | Total Reward Ep:   78.5 | Epsilon: 0.8200 | Avg Score (100ep):   2.39 | Memory:   12903
+Ep (Global): 19/1000 (Sesión: 19) | Steps: 252 | Score:   1 | Total Reward Ep:    1.4 | Epsilon: 0.8100 | Avg Score (100ep):   2.32 | Memory:   13155
+Ep (Global): 20/1000 (Sesión: 20) | Steps: 583 | Score:   6 | Total Reward Ep:   84.9 | Epsilon: 0.8000 | Avg Score (100ep):   2.50 | Memory:   13738
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 20
+Ep (Global): 21/1000 (Sesión: 21) | Steps: 795 | Score:   7 | Total Reward Ep:   94.3 | Epsilon: 0.7900 | Avg Score (100ep):   2.71 | Memory:   14533
+Ep (Global): 22/1000 (Sesión: 22) | Steps: 950 | Score:  11 | Total Reward Ep:  166.5 | Epsilon: 0.7800 | Avg Score (100ep):   3.09 | Memory:   15483
+Ep (Global): 23/1000 (Sesión: 23) | Steps: 392 | Score:   5 | Total Reward Ep:   74.4 | Epsilon: 0.7700 | Avg Score (100ep):   3.17 | Memory:   15875
+Ep (Global): 24/1000 (Sesión: 24) | Steps: 412 | Score:   5 | Total Reward Ep:   73.4 | Epsilon: 0.7600 | Avg Score (100ep):   3.25 | Memory:   16287
+Ep (Global): 25/1000 (Sesión: 25) | Steps: 807 | Score:  11 | Total Reward Ep:  173.6 | Epsilon: 0.7500 | Avg Score (100ep):   3.56 | Memory:   17094
+Ep (Global): 26/1000 (Sesión: 26) | Steps: 505 | Score:  10 | Total Reward Ep:  168.8 | Epsilon: 0.7400 | Avg Score (100ep):   3.81 | Memory:   17599
+Ep (Global): 27/1000 (Sesión: 27) | Steps: 613 | Score:   7 | Total Reward Ep:  103.4 | Epsilon: 0.7300 | Avg Score (100ep):   3.93 | Memory:   18212
+Ep (Global): 28/1000 (Sesión: 28) | Steps: 885 | Score:  12 | Total Reward Ep:  189.7 | Epsilon: 0.7200 | Avg Score (100ep):   4.21 | Memory:   19097
+Ep (Global): 29/1000 (Sesión: 29) | Steps: 455 | Score:   8 | Total Reward Ep:  131.2 | Epsilon: 0.7100 | Avg Score (100ep):   4.34 | Memory:   19552
+Ep (Global): 30/1000 (Sesión: 30) | Steps: 484 | Score:   6 | Total Reward Ep:   89.8 | Epsilon: 0.7000 | Avg Score (100ep):   4.40 | Memory:   20036
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 30
+Ep (Global): 31/1000 (Sesión: 31) | Steps: 484 | Score:   7 | Total Reward Ep:  109.8 | Epsilon: 0.6900 | Avg Score (100ep):   4.48 | Memory:   20520
+Ep (Global): 32/1000 (Sesión: 32) | Steps: 377 | Score:   9 | Total Reward Ep:  155.1 | Epsilon: 0.6800 | Avg Score (100ep):   4.62 | Memory:   20897
+Ep (Global): 33/1000 (Sesión: 33) | Steps: 921 | Score:  14 | Total Reward Ep:  227.9 | Epsilon: 0.6700 | Avg Score (100ep):   4.91 | Memory:   21818
+Ep (Global): 34/1000 (Sesión: 34) | Steps: 297 | Score:   7 | Total Reward Ep:  119.2 | Epsilon: 0.6600 | Avg Score (100ep):   4.97 | Memory:   22115
+Ep (Global): 35/1000 (Sesión: 35) | Steps: 332 | Score:  11 | Total Reward Ep:  197.4 | Epsilon: 0.6500 | Avg Score (100ep):   5.14 | Memory:   22447
+Ep (Global): 36/1000 (Sesión: 36) | Steps: 571 | Score:  14 | Total Reward Ep:  245.4 | Epsilon: 0.6400 | Avg Score (100ep):   5.39 | Memory:   23018
+Ep (Global): 37/1000 (Sesión: 37) | Steps: 420 | Score:   9 | Total Reward Ep:  153.0 | Epsilon: 0.6300 | Avg Score (100ep):   5.49 | Memory:   23438
+Ep (Global): 38/1000 (Sesión: 38) | Steps: 508 | Score:   7 | Total Reward Ep:  108.6 | Epsilon: 0.6200 | Avg Score (100ep):   5.53 | Memory:   23946
+Ep (Global): 39/1000 (Sesión: 39) | Steps: 691 | Score:  15 | Total Reward Ep:  259.4 | Epsilon: 0.6100 | Avg Score (100ep):   5.77 | Memory:   24637
+Ep (Global): 40/1000 (Sesión: 40) | Steps: 244 | Score:   5 | Total Reward Ep:   81.8 | Epsilon: 0.6000 | Avg Score (100ep):   5.75 | Memory:   24881
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 40
+Ep (Global): 41/1000 (Sesión: 41) | Steps: 484 | Score:  10 | Total Reward Ep:  169.8 | Epsilon: 0.5900 | Avg Score (100ep):   5.85 | Memory:   25365
+Ep (Global): 42/1000 (Sesión: 42) | Steps: 706 | Score:  12 | Total Reward Ep:  198.7 | Epsilon: 0.5800 | Avg Score (100ep):   6.00 | Memory:   26071
+Ep (Global): 43/1000 (Sesión: 43) | Steps: 413 | Score:   9 | Total Reward Ep:  153.4 | Epsilon: 0.5700 | Avg Score (100ep):   6.07 | Memory:   26484
+Ep (Global): 44/1000 (Sesión: 44) | Steps: 198 | Score:   7 | Total Reward Ep:  124.1 | Epsilon: 0.5600 | Avg Score (100ep):   6.09 | Memory:   26682
+Ep (Global): 45/1000 (Sesión: 45) | Steps: 467 | Score:  14 | Total Reward Ep:  250.6 | Epsilon: 0.5500 | Avg Score (100ep):   6.27 | Memory:   27149
+Ep (Global): 46/1000 (Sesión: 46) | Steps: 208 | Score:   4 | Total Reward Ep:   63.6 | Epsilon: 0.5400 | Avg Score (100ep):   6.22 | Memory:   27357
+Ep (Global): 47/1000 (Sesión: 47) | Steps: 452 | Score:  11 | Total Reward Ep:  191.4 | Epsilon: 0.5300 | Avg Score (100ep):   6.32 | Memory:   27809
+Ep (Global): 48/1000 (Sesión: 48) | Steps: 264 | Score:   7 | Total Reward Ep:  120.8 | Epsilon: 0.5200 | Avg Score (100ep):   6.33 | Memory:   28073
+Ep (Global): 49/1000 (Sesión: 49) | Steps: 483 | Score:  15 | Total Reward Ep:  269.8 | Epsilon: 0.5100 | Avg Score (100ep):   6.51 | Memory:   28556
+Ep (Global): 50/1000 (Sesión: 50) | Steps: 412 | Score:  12 | Total Reward Ep:  213.4 | Epsilon: 0.5000 | Avg Score (100ep):   6.62 | Memory:   28968
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 50
+Ep (Global): 51/1000 (Sesión: 51) | Steps: 210 | Score:   3 | Total Reward Ep:   43.5 | Epsilon: 0.4900 | Avg Score (100ep):   6.55 | Memory:   29178
+Ep (Global): 52/1000 (Sesión: 52) | Steps: 447 | Score:  11 | Total Reward Ep:  191.6 | Epsilon: 0.4800 | Avg Score (100ep):   6.63 | Memory:   29625
+Ep (Global): 53/1000 (Sesión: 53) | Steps: 514 | Score:  16 | Total Reward Ep:  288.3 | Epsilon: 0.4700 | Avg Score (100ep):   6.81 | Memory:   30139
+Ep (Global): 54/1000 (Sesión: 54) | Steps: 166 | Score:   5 | Total Reward Ep:   85.7 | Epsilon: 0.4600 | Avg Score (100ep):   6.78 | Memory:   30305
+Ep (Global): 55/1000 (Sesión: 55) | Steps: 285 | Score:   5 | Total Reward Ep:   79.8 | Epsilon: 0.4500 | Avg Score (100ep):   6.75 | Memory:   30590
+Ep (Global): 56/1000 (Sesión: 56) | Steps: 457 | Score:  15 | Total Reward Ep:  271.1 | Epsilon: 0.4400 | Avg Score (100ep):   6.89 | Memory:   31047
+Ep (Global): 57/1000 (Sesión: 57) | Steps: 516 | Score:  19 | Total Reward Ep:  348.2 | Epsilon: 0.4300 | Avg Score (100ep):   7.11 | Memory:   31563
+Ep (Global): 58/1000 (Sesión: 58) | Steps: 452 | Score:  15 | Total Reward Ep:  271.4 | Epsilon: 0.4200 | Avg Score (100ep):   7.24 | Memory:   32015
+Ep (Global): 59/1000 (Sesión: 59) | Steps: 271 | Score:  10 | Total Reward Ep:  180.4 | Epsilon: 0.4100 | Avg Score (100ep):   7.29 | Memory:   32286
+Ep (Global): 60/1000 (Sesión: 60) | Steps: 313 | Score:  10 | Total Reward Ep:  178.3 | Epsilon: 0.4000 | Avg Score (100ep):   7.33 | Memory:   32599
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 60
+Ep (Global): 61/1000 (Sesión: 61) | Steps: 514 | Score:  20 | Total Reward Ep:  368.3 | Epsilon: 0.3900 | Avg Score (100ep):   7.54 | Memory:   33113
+Ep (Global): 62/1000 (Sesión: 62) | Steps: 333 | Score:  13 | Total Reward Ep:  237.3 | Epsilon: 0.3800 | Avg Score (100ep):   7.63 | Memory:   33446
+Ep (Global): 63/1000 (Sesión: 63) | Steps:  90 | Score:   5 | Total Reward Ep:   89.5 | Epsilon: 0.3700 | Avg Score (100ep):   7.59 | Memory:   33536
+Ep (Global): 64/1000 (Sesión: 64) | Steps:  69 | Score:   3 | Total Reward Ep:   50.6 | Epsilon: 0.3600 | Avg Score (100ep):   7.52 | Memory:   33605
+Ep (Global): 65/1000 (Sesión: 65) | Steps: 200 | Score:   8 | Total Reward Ep:  144.0 | Epsilon: 0.3500 | Avg Score (100ep):   7.52 | Memory:   33805
+Ep (Global): 66/1000 (Sesión: 66) | Steps: 618 | Score:  27 | Total Reward Ep:  503.1 | Epsilon: 0.3400 | Avg Score (100ep):   7.82 | Memory:   34423
+Ep (Global): 67/1000 (Sesión: 67) | Steps: 559 | Score:  21 | Total Reward Ep:  386.0 | Epsilon: 0.3300 | Avg Score (100ep):   8.01 | Memory:   34982
+Ep (Global): 68/1000 (Sesión: 68) | Steps:  98 | Score:   4 | Total Reward Ep:   69.1 | Epsilon: 0.3200 | Avg Score (100ep):   7.96 | Memory:   35080
+Ep (Global): 69/1000 (Sesión: 69) | Steps: 294 | Score:  14 | Total Reward Ep:  259.3 | Epsilon: 0.3100 | Avg Score (100ep):   8.04 | Memory:   35374
+Ep (Global): 70/1000 (Sesión: 70) | Steps: 371 | Score:  15 | Total Reward Ep:  275.4 | Epsilon: 0.3000 | Avg Score (100ep):   8.14 | Memory:   35745
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 70
+Ep (Global): 71/1000 (Sesión: 71) | Steps: 187 | Score:   9 | Total Reward Ep:  164.6 | Epsilon: 0.2900 | Avg Score (100ep):   8.15 | Memory:   35932
+Ep (Global): 72/1000 (Sesión: 72) | Steps: 379 | Score:  18 | Total Reward Ep:  335.0 | Epsilon: 0.2800 | Avg Score (100ep):   8.29 | Memory:   36311
+Ep (Global): 73/1000 (Sesión: 73) | Steps: 450 | Score:  21 | Total Reward Ep:  391.5 | Epsilon: 0.2700 | Avg Score (100ep):   8.47 | Memory:   36761
+Ep (Global): 74/1000 (Sesión: 74) | Steps: 241 | Score:  10 | Total Reward Ep:  181.9 | Epsilon: 0.2600 | Avg Score (100ep):   8.49 | Memory:   37002
+Ep (Global): 75/1000 (Sesión: 75) | Steps: 391 | Score:  21 | Total Reward Ep:  394.4 | Epsilon: 0.2500 | Avg Score (100ep):   8.65 | Memory:   37393
+Ep (Global): 76/1000 (Sesión: 76) | Steps: 175 | Score:   8 | Total Reward Ep:  145.2 | Epsilon: 0.2400 | Avg Score (100ep):   8.64 | Memory:   37568
+Ep (Global): 77/1000 (Sesión: 77) | Steps: 644 | Score:  34 | Total Reward Ep:  641.8 | Epsilon: 0.2300 | Avg Score (100ep):   8.97 | Memory:   38212
+Ep (Global): 78/1000 (Sesión: 78) | Steps: 423 | Score:  19 | Total Reward Ep:  352.8 | Epsilon: 0.2200 | Avg Score (100ep):   9.10 | Memory:   38635
+Ep (Global): 79/1000 (Sesión: 79) | Steps: 347 | Score:  14 | Total Reward Ep:  256.6 | Epsilon: 0.2100 | Avg Score (100ep):   9.16 | Memory:   38982
+Ep (Global): 80/1000 (Sesión: 80) | Steps: 192 | Score:   9 | Total Reward Ep:  164.4 | Epsilon: 0.2000 | Avg Score (100ep):   9.16 | Memory:   39174
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 80
+Ep (Global): 81/1000 (Sesión: 81) | Steps: 306 | Score:  21 | Total Reward Ep:  398.7 | Epsilon: 0.1900 | Avg Score (100ep):   9.31 | Memory:   39480
+Ep (Global): 82/1000 (Sesión: 82) | Steps: 612 | Score:  33 | Total Reward Ep:  623.4 | Epsilon: 0.1800 | Avg Score (100ep):   9.60 | Memory:   40092
+Ep (Global): 83/1000 (Sesión: 83) | Steps: 339 | Score:  19 | Total Reward Ep:  357.0 | Epsilon: 0.1700 | Avg Score (100ep):   9.71 | Memory:   40431
+Ep (Global): 84/1000 (Sesión: 84) | Steps: 281 | Score:  17 | Total Reward Ep:  319.9 | Epsilon: 0.1600 | Avg Score (100ep):   9.80 | Memory:   40712
+Ep (Global): 85/1000 (Sesión: 85) | Steps: 354 | Score:  15 | Total Reward Ep:  276.3 | Epsilon: 0.1500 | Avg Score (100ep):   9.86 | Memory:   41066
+Ep (Global): 86/1000 (Sesión: 86) | Steps: 881 | Score:  46 | Total Reward Ep:  870.0 | Epsilon: 0.1400 | Avg Score (100ep):  10.28 | Memory:   41947
+Ep (Global): 87/1000 (Sesión: 87) | Steps: 364 | Score:  20 | Total Reward Ep:  375.8 | Epsilon: 0.1300 | Avg Score (100ep):  10.39 | Memory:   42311
+Ep (Global): 88/1000 (Sesión: 88) | Steps: 433 | Score:  24 | Total Reward Ep:  452.3 | Epsilon: 0.1200 | Avg Score (100ep):  10.55 | Memory:   42744
+Ep (Global): 89/1000 (Sesión: 89) | Steps: 103 | Score:   8 | Total Reward Ep:  148.9 | Epsilon: 0.1100 | Avg Score (100ep):  10.52 | Memory:   42847
+Ep (Global): 90/1000 (Sesión: 90) | Steps: 674 | Score:  41 | Total Reward Ep:  780.3 | Epsilon: 0.1000 | Avg Score (100ep):  10.86 | Memory:   43521
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 90
+Ep (Global): 91/1000 (Sesión: 91) | Steps: 362 | Score:  21 | Total Reward Ep:  395.9 | Epsilon: 0.0900 | Avg Score (100ep):  10.97 | Memory:   43883
+Ep (Global): 92/1000 (Sesión: 92) | Steps: 499 | Score:  31 | Total Reward Ep:  589.1 | Epsilon: 0.0800 | Avg Score (100ep):  11.18 | Memory:   44382
+Ep (Global): 93/1000 (Sesión: 93) | Steps: 543 | Score:  34 | Total Reward Ep:  646.9 | Epsilon: 0.0700 | Avg Score (100ep):  11.43 | Memory:   44925
+Ep (Global): 94/1000 (Sesión: 94) | Steps: 263 | Score:  19 | Total Reward Ep:  360.8 | Epsilon: 0.0600 | Avg Score (100ep):  11.51 | Memory:   45188
+Ep (Global): 95/1000 (Sesión: 95) | Steps: 559 | Score:  35 | Total Reward Ep:  666.1 | Epsilon: 0.0500 | Avg Score (100ep):  11.76 | Memory:   45747
+Ep (Global): 96/1000 (Sesión: 96) | Steps: 256 | Score:  20 | Total Reward Ep:  381.2 | Epsilon: 0.0400 | Avg Score (100ep):  11.84 | Memory:   46003
+Ep (Global): 97/1000 (Sesión: 97) | Steps: 207 | Score:  16 | Total Reward Ep:  303.6 | Epsilon: 0.0300 | Avg Score (100ep):  11.89 | Memory:   46210
+Ep (Global): 98/1000 (Sesión: 98) | Steps: 494 | Score:  30 | Total Reward Ep:  569.3 | Epsilon: 0.0200 | Avg Score (100ep):  12.07 | Memory:   46704
+Ep (Global): 99/1000 (Sesión: 99) | Steps: 276 | Score:  18 | Total Reward Ep:  340.2 | Epsilon: 0.0100 | Avg Score (100ep):  12.13 | Memory:   46980
+Ep (Global): 100/1000 (Sesión: 100) | Steps: 553 | Score:  36 | Total Reward Ep:  686.4 | Epsilon: 0.0001 | Avg Score (100ep):  12.37 | Memory:   47533
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 100
+Ep (Global): 101/1000 (Sesión: 101) | Steps: 437 | Score:  23 | Total Reward Ep:  432.1 | Epsilon: 0.0001 | Avg Score (100ep):  12.60 | Memory:   47970
+Ep (Global): 102/1000 (Sesión: 102) | Steps: 524 | Score:  33 | Total Reward Ep:  627.8 | Epsilon: 0.0001 | Avg Score (100ep):  12.93 | Memory:   48494
+Ep (Global): 103/1000 (Sesión: 103) | Steps: 226 | Score:  19 | Total Reward Ep:  362.7 | Epsilon: 0.0001 | Avg Score (100ep):  13.12 | Memory:   48720
+Ep (Global): 104/1000 (Sesión: 104) | Steps: 141 | Score:  12 | Total Reward Ep:  226.9 | Epsilon: 0.0001 | Avg Score (100ep):  13.24 | Memory:   48861
+Ep (Global): 105/1000 (Sesión: 105) | Steps: 625 | Score:  40 | Total Reward Ep:  762.8 | Epsilon: 0.0001 | Avg Score (100ep):  13.64 | Memory:   49486
+Ep (Global): 106/1000 (Sesión: 106) | Steps: 378 | Score:  26 | Total Reward Ep:  495.1 | Epsilon: 0.0001 | Avg Score (100ep):  13.86 | Memory:   49864
+Ep (Global): 107/1000 (Sesión: 107) | Steps: 642 | Score:  44 | Total Reward Ep:  841.9 | Epsilon: 0.0001 | Avg Score (100ep):  14.26 | Memory:   50506
+Ep (Global): 108/1000 (Sesión: 108) | Steps: 382 | Score:  24 | Total Reward Ep:  454.9 | Epsilon: 0.0001 | Avg Score (100ep):  14.48 | Memory:   50888
+Ep (Global): 109/1000 (Sesión: 109) | Steps: 742 | Score:  46 | Total Reward Ep:  876.9 | Epsilon: 0.0001 | Avg Score (100ep):  14.93 | Memory:   51630
+Ep (Global): 110/1000 (Sesión: 110) | Steps: 244 | Score:  17 | Total Reward Ep:  321.8 | Epsilon: 0.0001 | Avg Score (100ep):  15.09 | Memory:   51874
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 110
+Ep (Global): 111/1000 (Sesión: 111) | Steps: 251 | Score:  19 | Total Reward Ep:  361.4 | Epsilon: 0.0001 | Avg Score (100ep):  15.24 | Memory:   52125
+Ep (Global): 112/1000 (Sesión: 112) | Steps: 336 | Score:  23 | Total Reward Ep:  437.2 | Epsilon: 0.0001 | Avg Score (100ep):  15.45 | Memory:   52461
+Ep (Global): 113/1000 (Sesión: 113) | Steps: 564 | Score:  36 | Total Reward Ep:  685.8 | Epsilon: 0.0001 | Avg Score (100ep):  15.81 | Memory:   53025
+Ep (Global): 114/1000 (Sesión: 114) | Steps: 708 | Score:  43 | Total Reward Ep:  818.6 | Epsilon: 0.0001 | Avg Score (100ep):  16.19 | Memory:   53733
+Ep (Global): 115/1000 (Sesión: 115) | Steps: 464 | Score:  30 | Total Reward Ep:  570.8 | Epsilon: 0.0001 | Avg Score (100ep):  16.43 | Memory:   54197
+Ep (Global): 116/1000 (Sesión: 116) | Steps: 386 | Score:  29 | Total Reward Ep:  554.7 | Epsilon: 0.0001 | Avg Score (100ep):  16.69 | Memory:   54583
+Ep (Global): 117/1000 (Sesión: 117) | Steps: 229 | Score:  12 | Total Reward Ep:  222.5 | Epsilon: 0.0001 | Avg Score (100ep):  16.76 | Memory:   54812
+Ep (Global): 118/1000 (Sesión: 118) | Steps: 667 | Score:  44 | Total Reward Ep:  840.7 | Epsilon: 0.0001 | Avg Score (100ep):  17.14 | Memory:   55479
+Ep (Global): 119/1000 (Sesión: 119) | Steps: 282 | Score:  19 | Total Reward Ep:  359.9 | Epsilon: 0.0001 | Avg Score (100ep):  17.32 | Memory:   55761
+Ep (Global): 120/1000 (Sesión: 120) | Steps: 388 | Score:  30 | Total Reward Ep:  574.6 | Epsilon: 0.0001 | Avg Score (100ep):  17.56 | Memory:   56149
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 120
+Ep (Global): 121/1000 (Sesión: 121) | Steps: 801 | Score:  51 | Total Reward Ep:  974.0 | Epsilon: 0.0001 | Avg Score (100ep):  18.00 | Memory:   56950
+Ep (Global): 122/1000 (Sesión: 122) | Steps: 374 | Score:  26 | Total Reward Ep:  495.3 | Epsilon: 0.0001 | Avg Score (100ep):  18.15 | Memory:   57324
+Ep (Global): 123/1000 (Sesión: 123) | Steps: 529 | Score:  38 | Total Reward Ep:  727.6 | Epsilon: 0.0001 | Avg Score (100ep):  18.48 | Memory:   57853
+Ep (Global): 124/1000 (Sesión: 124) | Steps: 379 | Score:  23 | Total Reward Ep:  435.0 | Epsilon: 0.0001 | Avg Score (100ep):  18.66 | Memory:   58232
+Ep (Global): 125/1000 (Sesión: 125) | Steps: 461 | Score:  29 | Total Reward Ep:  550.9 | Epsilon: 0.0001 | Avg Score (100ep):  18.84 | Memory:   58693
+Ep (Global): 126/1000 (Sesión: 126) | Steps: 502 | Score:  31 | Total Reward Ep:  588.9 | Epsilon: 0.0001 | Avg Score (100ep):  19.05 | Memory:   59195
+Ep (Global): 127/1000 (Sesión: 127) | Steps: 405 | Score:  33 | Total Reward Ep:  633.8 | Epsilon: 0.0001 | Avg Score (100ep):  19.31 | Memory:   59600
+Ep (Global): 128/1000 (Sesión: 128) | Steps: 210 | Score:  18 | Total Reward Ep:  343.5 | Epsilon: 0.0001 | Avg Score (100ep):  19.37 | Memory:   59810
+Ep (Global): 129/1000 (Sesión: 129) | Steps: 639 | Score:  36 | Total Reward Ep:  682.1 | Epsilon: 0.0001 | Avg Score (100ep):  19.65 | Memory:   60449
+Ep (Global): 130/1000 (Sesión: 130) | Steps: 726 | Score:  43 | Total Reward Ep:  817.7 | Epsilon: 0.0001 | Avg Score (100ep):  20.02 | Memory:   61175
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 130
+Ep (Global): 131/1000 (Sesión: 131) | Steps: 125 | Score:   7 | Total Reward Ep:  127.8 | Epsilon: 0.0001 | Avg Score (100ep):  20.02 | Memory:   61300
+Ep (Global): 132/1000 (Sesión: 132) | Steps: 404 | Score:  25 | Total Reward Ep:  473.8 | Epsilon: 0.0001 | Avg Score (100ep):  20.18 | Memory:   61704
+Ep (Global): 133/1000 (Sesión: 133) | Steps: 414 | Score:  31 | Total Reward Ep:  593.3 | Epsilon: 0.0001 | Avg Score (100ep):  20.35 | Memory:   62118
+Ep (Global): 134/1000 (Sesión: 134) | Steps: 413 | Score:  25 | Total Reward Ep:  473.3 | Epsilon: 0.0001 | Avg Score (100ep):  20.53 | Memory:   62531
+Ep (Global): 135/1000 (Sesión: 135) | Steps: 705 | Score:  43 | Total Reward Ep:  818.8 | Epsilon: 0.0001 | Avg Score (100ep):  20.85 | Memory:   63236
+Ep (Global): 136/1000 (Sesión: 136) | Steps: 380 | Score:  29 | Total Reward Ep:  555.0 | Epsilon: 0.0001 | Avg Score (100ep):  21.00 | Memory:   63616
+Ep (Global): 137/1000 (Sesión: 137) | Steps: 487 | Score:  29 | Total Reward Ep:  549.6 | Epsilon: 0.0001 | Avg Score (100ep):  21.20 | Memory:   64103
+Ep (Global): 138/1000 (Sesión: 138) | Steps: 585 | Score:  45 | Total Reward Ep:  864.8 | Epsilon: 0.0001 | Avg Score (100ep):  21.58 | Memory:   64688
+Ep (Global): 139/1000 (Sesión: 139) | Steps: 468 | Score:  30 | Total Reward Ep:  570.6 | Epsilon: 0.0001 | Avg Score (100ep):  21.73 | Memory:   65156
+Ep (Global): 140/1000 (Sesión: 140) | Steps: 217 | Score:  14 | Total Reward Ep:  263.1 | Epsilon: 0.0001 | Avg Score (100ep):  21.82 | Memory:   65373
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 140
+Ep (Global): 141/1000 (Sesión: 141) | Steps: 190 | Score:  16 | Total Reward Ep:  304.5 | Epsilon: 0.0001 | Avg Score (100ep):  21.88 | Memory:   65563
+Ep (Global): 142/1000 (Sesión: 142) | Steps: 464 | Score:  37 | Total Reward Ep:  710.8 | Epsilon: 0.0001 | Avg Score (100ep):  22.13 | Memory:   66027
+Ep (Global): 143/1000 (Sesión: 143) | Steps: 282 | Score:  18 | Total Reward Ep:  339.9 | Epsilon: 0.0001 | Avg Score (100ep):  22.22 | Memory:   66309
+Ep (Global): 144/1000 (Sesión: 144) | Steps: 448 | Score:  34 | Total Reward Ep:  651.6 | Epsilon: 0.0001 | Avg Score (100ep):  22.49 | Memory:   66757
+Ep (Global): 145/1000 (Sesión: 145) | Steps: 530 | Score:  35 | Total Reward Ep:  667.5 | Epsilon: 0.0001 | Avg Score (100ep):  22.70 | Memory:   67287
+Ep (Global): 146/1000 (Sesión: 146) | Steps: 366 | Score:  22 | Total Reward Ep:  415.7 | Epsilon: 0.0001 | Avg Score (100ep):  22.88 | Memory:   67653
+Ep (Global): 147/1000 (Sesión: 147) | Steps: 443 | Score:  30 | Total Reward Ep:  571.9 | Epsilon: 0.0001 | Avg Score (100ep):  23.07 | Memory:   68096
+Ep (Global): 148/1000 (Sesión: 148) | Steps: 366 | Score:  26 | Total Reward Ep:  495.7 | Epsilon: 0.0001 | Avg Score (100ep):  23.26 | Memory:   68462
+Ep (Global): 149/1000 (Sesión: 149) | Steps: 394 | Score:  29 | Total Reward Ep:  554.3 | Epsilon: 0.0001 | Avg Score (100ep):  23.40 | Memory:   68856
+Ep (Global): 150/1000 (Sesión: 150) | Steps: 327 | Score:  21 | Total Reward Ep:  397.6 | Epsilon: 0.0001 | Avg Score (100ep):  23.49 | Memory:   69183
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 150
+Ep (Global): 151/1000 (Sesión: 151) | Steps: 254 | Score:  15 | Total Reward Ep:  281.3 | Epsilon: 0.0001 | Avg Score (100ep):  23.61 | Memory:   69437
+Ep (Global): 152/1000 (Sesión: 152) | Steps: 508 | Score:  33 | Total Reward Ep:  628.6 | Epsilon: 0.0001 | Avg Score (100ep):  23.83 | Memory:   69945
+Ep (Global): 153/1000 (Sesión: 153) | Steps: 670 | Score:  44 | Total Reward Ep:  840.5 | Epsilon: 0.0001 | Avg Score (100ep):  24.11 | Memory:   70615
+Ep (Global): 154/1000 (Sesión: 154) | Steps: 445 | Score:  29 | Total Reward Ep:  551.7 | Epsilon: 0.0001 | Avg Score (100ep):  24.35 | Memory:   71060
+Ep (Global): 155/1000 (Sesión: 155) | Steps: 229 | Score:  16 | Total Reward Ep:  302.5 | Epsilon: 0.0001 | Avg Score (100ep):  24.46 | Memory:   71289
+Ep (Global): 156/1000 (Sesión: 156) | Steps: 663 | Score:  42 | Total Reward Ep:  800.9 | Epsilon: 0.0001 | Avg Score (100ep):  24.73 | Memory:   71952
+Ep (Global): 157/1000 (Sesión: 157) | Steps: 243 | Score:  19 | Total Reward Ep:  361.8 | Epsilon: 0.0001 | Avg Score (100ep):  24.73 | Memory:   72195
+Ep (Global): 158/1000 (Sesión: 158) | Steps: 484 | Score:  30 | Total Reward Ep:  569.8 | Epsilon: 0.0001 | Avg Score (100ep):  24.88 | Memory:   72679
+Ep (Global): 159/1000 (Sesión: 159) | Steps: 268 | Score:  19 | Total Reward Ep:  360.6 | Epsilon: 0.0001 | Avg Score (100ep):  24.97 | Memory:   72947
+Ep (Global): 160/1000 (Sesión: 160) | Steps: 256 | Score:  18 | Total Reward Ep:  341.2 | Epsilon: 0.0001 | Avg Score (100ep):  25.05 | Memory:   73203
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 160
+Ep (Global): 161/1000 (Sesión: 161) | Steps: 180 | Score:  12 | Total Reward Ep:  225.0 | Epsilon: 0.0001 | Avg Score (100ep):  24.97 | Memory:   73383
+Ep (Global): 162/1000 (Sesión: 162) | Steps: 562 | Score:  36 | Total Reward Ep:  685.9 | Epsilon: 0.0001 | Avg Score (100ep):  25.20 | Memory:   73945
+Ep (Global): 163/1000 (Sesión: 163) | Steps: 400 | Score:  31 | Total Reward Ep:  594.0 | Epsilon: 0.0001 | Avg Score (100ep):  25.46 | Memory:   74345
+Ep (Global): 164/1000 (Sesión: 164) | Steps: 225 | Score:  18 | Total Reward Ep:  342.7 | Epsilon: 0.0001 | Avg Score (100ep):  25.61 | Memory:   74570
+Ep (Global): 162/1000 (Sesión: 162) | Steps: 562 | Score:  36 | Total Reward Ep:  685.9 | Epsilon: 0.0001 | Avg Score (100ep):  25.20 | Memory:   73945
+Ep (Global): 163/1000 (Sesión: 163) | Steps: 400 | Score:  31 | Total Reward Ep:  594.0 | Epsilon: 0.0001 | Avg Score (100ep):  25.46 | Memory:   74345
+Ep (Global): 164/1000 (Sesión: 164) | Steps: 225 | Score:  18 | Total Reward Ep:  342.7 | Epsilon: 0.0001 | Avg Score (100ep):  25.61 | Memory:   74570
+Ep (Global): 163/1000 (Sesión: 163) | Steps: 400 | Score:  31 | Total Reward Ep:  594.0 | Epsilon: 0.0001 | Avg Score (100ep):  25.46 | Memory:   74345
+Ep (Global): 164/1000 (Sesión: 164) | Steps: 225 | Score:  18 | Total Reward Ep:  342.7 | Epsilon: 0.0001 | Avg Score (100ep):  25.61 | Memory:   74570
+Ep (Global): 164/1000 (Sesión: 164) | Steps: 225 | Score:  18 | Total Reward Ep:  342.7 | Epsilon: 0.0001 | Avg Score (100ep):  25.61 | Memory:   74570
+Ep (Global): 165/1000 (Sesión: 165) | Steps: 582 | Score:  36 | Total Reward Ep:  684.9 | Epsilon: 0.0001 | Avg Score (100ep):  25.89 | Memory:   75152
+Ep (Global): 165/1000 (Sesión: 165) | Steps: 582 | Score:  36 | Total Reward Ep:  684.9 | Epsilon: 0.0001 | Avg Score (100ep):  25.89 | Memory:   75152
+Ep (Global): 166/1000 (Sesión: 166) | Steps: 690 | Score:  43 | Total Reward Ep:  819.5 | Epsilon: 0.0001 | Avg Score (100ep):  26.05 | Memory:   75842
+Ep (Global): 166/1000 (Sesión: 166) | Steps: 690 | Score:  43 | Total Reward Ep:  819.5 | Epsilon: 0.0001 | Avg Score (100ep):  26.05 | Memory:   75842
+Ep (Global): 167/1000 (Sesión: 167) | Steps: 393 | Score:  24 | Total Reward Ep:  454.3 | Epsilon: 0.0001 | Avg Score (100ep):  26.08 | Memory:   76235
+Ep (Global): 167/1000 (Sesión: 167) | Steps: 393 | Score:  24 | Total Reward Ep:  454.3 | Epsilon: 0.0001 | Avg Score (100ep):  26.08 | Memory:   76235
+Ep (Global): 168/1000 (Sesión: 168) | Steps: 543 | Score:  42 | Total Reward Ep:  806.9 | Epsilon: 0.0001 | Avg Score (100ep):  26.46 | Memory:   76778
+Ep (Global): 169/1000 (Sesión: 169) | Steps: 160 | Score:  12 | Total Reward Ep:  226.0 | Epsilon: 0.0001 | Avg Score (100ep):  26.44 | Memory:   76938
+Ep (Global): 170/1000 (Sesión: 170) | Steps: 483 | Score:  33 | Total Reward Ep:  629.9 | Epsilon: 0.0001 | Avg Score (100ep):  26.62 | Memory:   77421
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 170
+Ep (Global): 171/1000 (Sesión: 171) | Steps: 340 | Score:  23 | Total Reward Ep:  437.0 | Epsilon: 0.0001 | Avg Score (100ep):  26.76 | Memory:   77761
+Ep (Global): 172/1000 (Sesión: 172) | Steps: 475 | Score:  27 | Total Reward Ep:  510.2 | Epsilon: 0.0001 | Avg Score (100ep):  26.85 | Memory:   78236
+Ep (Global): 173/1000 (Sesión: 173) | Steps: 570 | Score:  34 | Total Reward Ep:  645.5 | Epsilon: 0.0001 | Avg Score (100ep):  26.98 | Memory:   78806
+Ep (Global): 174/1000 (Sesión: 174) | Steps: 251 | Score:  17 | Total Reward Ep:  321.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.05 | Memory:   79057
+Ep (Global): 175/1000 (Sesión: 175) | Steps: 250 | Score:  18 | Total Reward Ep:  341.5 | Epsilon: 0.0001 | Avg Score (100ep):  27.02 | Memory:   79307
+Ep (Global): 176/1000 (Sesión: 176) | Steps: 642 | Score:  41 | Total Reward Ep:  781.9 | Epsilon: 0.0001 | Avg Score (100ep):  27.35 | Memory:   79949
+Ep (Global): 177/1000 (Sesión: 177) | Steps: 337 | Score:  23 | Total Reward Ep:  437.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.24 | Memory:   80286
+Ep (Global): 178/1000 (Sesión: 178) | Steps: 219 | Score:  18 | Total Reward Ep:  343.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.23 | Memory:   80505
+Ep (Global): 179/1000 (Sesión: 179) | Steps: 416 | Score:  30 | Total Reward Ep:  573.2 | Epsilon: 0.0001 | Avg Score (100ep):  27.39 | Memory:   80921
+Ep (Global): 180/1000 (Sesión: 180) | Steps: 867 | Score:  47 | Total Reward Ep:  890.7 | Epsilon: 0.0001 | Avg Score (100ep):  27.77 | Memory:   81788
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 180
+Ep (Global): 181/1000 (Sesión: 181) | Steps: 396 | Score:  21 | Total Reward Ep:  394.2 | Epsilon: 0.0001 | Avg Score (100ep):  27.77 | Memory:   82184
+Ep (Global): 182/1000 (Sesión: 182) | Steps: 200 | Score:  16 | Total Reward Ep:  304.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.60 | Memory:   82384
+Ep (Global): 183/1000 (Sesión: 183) | Steps: 560 | Score:  34 | Total Reward Ep:  646.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.75 | Memory:   82944
+Ep (Global): 184/1000 (Sesión: 184) | Steps: 203 | Score:  12 | Total Reward Ep:  223.8 | Epsilon: 0.0001 | Avg Score (100ep):  27.70 | Memory:   83147
+Ep (Global): 185/1000 (Sesión: 185) | Steps: 348 | Score:  26 | Total Reward Ep:  496.6 | Epsilon: 0.0001 | Avg Score (100ep):  27.81 | Memory:   83495
+Ep (Global): 186/1000 (Sesión: 186) | Steps: 356 | Score:  24 | Total Reward Ep:  456.2 | Epsilon: 0.0001 | Avg Score (100ep):  27.59 | Memory:   83851
+Ep (Global): 187/1000 (Sesión: 187) | Steps: 311 | Score:  24 | Total Reward Ep:  458.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.63 | Memory:   84162
+Ep (Global): 188/1000 (Sesión: 188) | Steps: 565 | Score:  33 | Total Reward Ep:  625.8 | Epsilon: 0.0001 | Avg Score (100ep):  27.72 | Memory:   84727
+Ep (Global): 189/1000 (Sesión: 189) | Steps: 310 | Score:  24 | Total Reward Ep:  458.5 | Epsilon: 0.0001 | Avg Score (100ep):  27.88 | Memory:   85037
+Ep (Global): 190/1000 (Sesión: 190) | Steps: 250 | Score:  18 | Total Reward Ep:  341.5 | Epsilon: 0.0001 | Avg Score (100ep):  27.65 | Memory:   85287
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 190
+Ep (Global): 191/1000 (Sesión: 191) | Steps: 519 | Score:  33 | Total Reward Ep:  628.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.77 | Memory:   85806
+Ep (Global): 192/1000 (Sesión: 192) | Steps: 554 | Score:  34 | Total Reward Ep:  646.3 | Epsilon: 0.0001 | Avg Score (100ep):  27.80 | Memory:   86360
+Ep (Global): 193/1000 (Sesión: 193) | Steps: 250 | Score:  20 | Total Reward Ep:  381.5 | Epsilon: 0.0001 | Avg Score (100ep):  27.66 | Memory:   86610
+Ep (Global): 194/1000 (Sesión: 194) | Steps: 405 | Score:  25 | Total Reward Ep:  473.7 | Epsilon: 0.0001 | Avg Score (100ep):  27.72 | Memory:   87015
+Ep (Global): 195/1000 (Sesión: 195) | Steps: 566 | Score:  37 | Total Reward Ep:  705.7 | Epsilon: 0.0001 | Avg Score (100ep):  27.74 | Memory:   87581
+Ep (Global): 196/1000 (Sesión: 196) | Steps: 159 | Score:   8 | Total Reward Ep:  146.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.62 | Memory:   87740
+Ep (Global): 197/1000 (Sesión: 197) | Steps: 933 | Score:  51 | Total Reward Ep:  967.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.97 | Memory:   88673
+Ep (Global): 198/1000 (Sesión: 198) | Steps: 487 | Score:  35 | Total Reward Ep:  669.7 | Epsilon: 0.0001 | Avg Score (100ep):  28.02 | Memory:   89160
+Ep (Global): 199/1000 (Sesión: 199) | Steps: 327 | Score:  20 | Total Reward Ep:  377.6 | Epsilon: 0.0001 | Avg Score (100ep):  28.04 | Memory:   89487
+Ep (Global): 200/1000 (Sesión: 200) | Steps: 561 | Score:  41 | Total Reward Ep:  786.0 | Epsilon: 0.0001 | Avg Score (100ep):  28.09 | Memory:   90048
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 200
+Ep (Global): 201/1000 (Sesión: 201) | Steps: 457 | Score:  31 | Total Reward Ep:  591.1 | Epsilon: 0.0001 | Avg Score (100ep):  28.17 | Memory:   90505
+Ep (Global): 202/1000 (Sesión: 202) | Steps: 730 | Score:  45 | Total Reward Ep:  857.5 | Epsilon: 0.0001 | Avg Score (100ep):  28.29 | Memory:   91235
+Ep (Global): 203/1000 (Sesión: 203) | Steps: 538 | Score:  43 | Total Reward Ep:  827.1 | Epsilon: 0.0001 | Avg Score (100ep):  28.53 | Memory:   91773
+Ep (Global): 204/1000 (Sesión: 204) | Steps: 446 | Score:  29 | Total Reward Ep:  551.7 | Epsilon: 0.0001 | Avg Score (100ep):  28.70 | Memory:   92219
+Ep (Global): 205/1000 (Sesión: 205) | Steps: 559 | Score:  38 | Total Reward Ep:  726.1 | Epsilon: 0.0001 | Avg Score (100ep):  28.68 | Memory:   92778
+Ep (Global): 206/1000 (Sesión: 206) | Steps: 434 | Score:  28 | Total Reward Ep:  532.3 | Epsilon: 0.0001 | Avg Score (100ep):  28.70 | Memory:   93212
+Ep (Global): 207/1000 (Sesión: 207) | Steps: 360 | Score:  25 | Total Reward Ep:  476.0 | Epsilon: 0.0001 | Avg Score (100ep):  28.51 | Memory:   93572
+Ep (Global): 208/1000 (Sesión: 208) | Steps: 414 | Score:  28 | Total Reward Ep:  533.3 | Epsilon: 0.0001 | Avg Score (100ep):  28.55 | Memory:   93986
+Ep (Global): 209/1000 (Sesión: 209) | Steps: 234 | Score:  19 | Total Reward Ep:  362.3 | Epsilon: 0.0001 | Avg Score (100ep):  28.28 | Memory:   94220
+Ep (Global): 210/1000 (Sesión: 210) | Steps: 267 | Score:  17 | Total Reward Ep:  320.6 | Epsilon: 0.0001 | Avg Score (100ep):  28.28 | Memory:   94487
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 210
+Ep (Global): 211/1000 (Sesión: 211) | Steps: 332 | Score:  21 | Total Reward Ep:  397.4 | Epsilon: 0.0001 | Avg Score (100ep):  28.30 | Memory:   94819
+Ep (Global): 212/1000 (Sesión: 212) | Steps: 500 | Score:  37 | Total Reward Ep:  709.0 | Epsilon: 0.0001 | Avg Score (100ep):  28.44 | Memory:   95319
+Ep (Global): 213/1000 (Sesión: 213) | Steps: 137 | Score:  11 | Total Reward Ep:  207.1 | Epsilon: 0.0001 | Avg Score (100ep):  28.19 | Memory:   95456
+Ep (Global): 214/1000 (Sesión: 214) | Steps: 205 | Score:  14 | Total Reward Ep:  263.7 | Epsilon: 0.0001 | Avg Score (100ep):  27.90 | Memory:   95661
+Ep (Global): 215/1000 (Sesión: 215) | Steps: 217 | Score:  16 | Total Reward Ep:  303.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.76 | Memory:   95878
+Ep (Global): 216/1000 (Sesión: 216) | Steps: 251 | Score:  14 | Total Reward Ep:  261.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.61 | Memory:   96129
+Ep (Global): 217/1000 (Sesión: 217) | Steps: 257 | Score:  22 | Total Reward Ep:  421.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.71 | Memory:   96386
+Ep (Global): 218/1000 (Sesión: 218) | Steps: 480 | Score:  30 | Total Reward Ep:  570.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.57 | Memory:   96866
+Ep (Global): 219/1000 (Sesión: 219) | Steps: 242 | Score:  18 | Total Reward Ep:  341.9 | Epsilon: 0.0001 | Avg Score (100ep):  27.56 | Memory:   97108
+Ep (Global): 220/1000 (Sesión: 220) | Steps: 391 | Score:  27 | Total Reward Ep:  514.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.53 | Memory:   97499
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 220
+Ep (Global): 221/1000 (Sesión: 221) | Steps: 541 | Score:  36 | Total Reward Ep:  687.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.38 | Memory:   98040
+Ep (Global): 222/1000 (Sesión: 222) | Steps: 463 | Score:  36 | Total Reward Ep:  690.9 | Epsilon: 0.0001 | Avg Score (100ep):  27.48 | Memory:   98503
+Ep (Global): 223/1000 (Sesión: 223) | Steps: 579 | Score:  33 | Total Reward Ep:  625.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.43 | Memory:   99082
+Ep (Global): 224/1000 (Sesión: 224) | Steps: 340 | Score:  23 | Total Reward Ep:  437.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.43 | Memory:   99422
+Ep (Global): 225/1000 (Sesión: 225) | Steps: 592 | Score:  36 | Total Reward Ep:  684.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.50 | Memory:  100014
+Ep (Global): 226/1000 (Sesión: 226) | Steps: 248 | Score:  20 | Total Reward Ep:  381.6 | Epsilon: 0.0001 | Avg Score (100ep):  27.39 | Memory:  100262
+Ep (Global): 227/1000 (Sesión: 227) | Steps: 659 | Score:  44 | Total Reward Ep:  841.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.50 | Memory:  100921
+Ep (Global): 228/1000 (Sesión: 228) | Steps: 312 | Score:  26 | Total Reward Ep:  498.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.58 | Memory:  101233
+Ep (Global): 229/1000 (Sesión: 229) | Steps: 278 | Score:  16 | Total Reward Ep:  300.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.38 | Memory:  101511
+Ep (Global): 230/1000 (Sesión: 230) | Steps: 292 | Score:  22 | Total Reward Ep:  419.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.17 | Memory:  101803
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 230
+Ep (Global): 231/1000 (Sesión: 231) | Steps: 434 | Score:  31 | Total Reward Ep:  592.3 | Epsilon: 0.0001 | Avg Score (100ep):  27.41 | Memory:  102237
+Ep (Global): 232/1000 (Sesión: 232) | Steps: 140 | Score:  10 | Total Reward Ep:  187.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.26 | Memory:  102377
+Ep (Global): 233/1000 (Sesión: 233) | Steps: 395 | Score:  25 | Total Reward Ep:  474.2 | Epsilon: 0.0001 | Avg Score (100ep):  27.20 | Memory:  102772
+Ep (Global): 234/1000 (Sesión: 234) | Steps: 437 | Score:  27 | Total Reward Ep:  512.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.22 | Memory:  103209
+Ep (Global): 235/1000 (Sesión: 235) | Steps: 465 | Score:  31 | Total Reward Ep:  590.8 | Epsilon: 0.0001 | Avg Score (100ep):  27.10 | Memory:  103674
+Ep (Global): 236/1000 (Sesión: 236) | Steps: 390 | Score:  24 | Total Reward Ep:  454.5 | Epsilon: 0.0001 | Avg Score (100ep):  27.05 | Memory:  104064
+Ep (Global): 237/1000 (Sesión: 237) | Steps: 399 | Score:  30 | Total Reward Ep:  574.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.06 | Memory:  104463
+Ep (Global): 238/1000 (Sesión: 238) | Steps: 752 | Score:  45 | Total Reward Ep:  856.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.06 | Memory:  105215
+Ep (Global): 239/1000 (Sesión: 239) | Steps: 368 | Score:  27 | Total Reward Ep:  515.6 | Epsilon: 0.0001 | Avg Score (100ep):  27.03 | Memory:  105583
+Ep (Global): 240/1000 (Sesión: 240) | Steps: 230 | Score:  19 | Total Reward Ep:  362.5 | Epsilon: 0.0001 | Avg Score (100ep):  27.08 | Memory:  105813
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 240
+Ep (Global): 241/1000 (Sesión: 241) | Steps: 454 | Score:  31 | Total Reward Ep:  591.3 | Epsilon: 0.0001 | Avg Score (100ep):  27.23 | Memory:  106267
+Ep (Global): 242/1000 (Sesión: 242) | Steps: 151 | Score:  10 | Total Reward Ep:  186.4 | Epsilon: 0.0001 | Avg Score (100ep):  26.96 | Memory:  106418
+Ep (Global): 243/1000 (Sesión: 243) | Steps: 913 | Score:  51 | Total Reward Ep:  968.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.29 | Memory:  107331
+Ep (Global): 244/1000 (Sesión: 244) | Steps: 432 | Score:  26 | Total Reward Ep:  492.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.21 | Memory:  107763
+Ep (Global): 245/1000 (Sesión: 245) | Steps: 287 | Score:  21 | Total Reward Ep:  399.6 | Epsilon: 0.0001 | Avg Score (100ep):  27.07 | Memory:  108050
+Ep (Global): 246/1000 (Sesión: 246) | Steps: 339 | Score:  24 | Total Reward Ep:  457.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.09 | Memory:  108389
+Ep (Global): 247/1000 (Sesión: 247) | Steps: 366 | Score:  27 | Total Reward Ep:  515.7 | Epsilon: 0.0001 | Avg Score (100ep):  27.06 | Memory:  108755
+Ep (Global): 248/1000 (Sesión: 248) | Steps: 518 | Score:  33 | Total Reward Ep:  628.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.13 | Memory:  109273
+Ep (Global): 249/1000 (Sesión: 249) | Steps: 457 | Score:  30 | Total Reward Ep:  571.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.14 | Memory:  109730
+Ep (Global): 250/1000 (Sesión: 250) | Steps: 132 | Score:  12 | Total Reward Ep:  227.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.05 | Memory:  109862
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 250
+Ep (Global): 251/1000 (Sesión: 251) | Steps: 381 | Score:  29 | Total Reward Ep:  554.9 | Epsilon: 0.0001 | Avg Score (100ep):  27.19 | Memory:  110243
+Ep (Global): 252/1000 (Sesión: 252) | Steps: 707 | Score:  47 | Total Reward Ep:  898.7 | Epsilon: 0.0001 | Avg Score (100ep):  27.33 | Memory:  110950
+Ep (Global): 253/1000 (Sesión: 253) | Steps: 605 | Score:  40 | Total Reward Ep:  763.8 | Epsilon: 0.0001 | Avg Score (100ep):  27.29 | Memory:  111555
+Ep (Global): 254/1000 (Sesión: 254) | Steps: 430 | Score:  27 | Total Reward Ep:  512.5 | Epsilon: 0.0001 | Avg Score (100ep):  27.27 | Memory:  111985
+Ep (Global): 255/1000 (Sesión: 255) | Steps: 716 | Score:  43 | Total Reward Ep:  818.2 | Epsilon: 0.0001 | Avg Score (100ep):  27.54 | Memory:  112701
+Ep (Global): 256/1000 (Sesión: 256) | Steps: 636 | Score:  42 | Total Reward Ep:  802.2 | Epsilon: 0.0001 | Avg Score (100ep):  27.54 | Memory:  113337
+Ep (Global): 257/1000 (Sesión: 257) | Steps: 641 | Score:  40 | Total Reward Ep:  762.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.75 | Memory:  113978
+Ep (Global): 258/1000 (Sesión: 258) | Steps: 298 | Score:  24 | Total Reward Ep:  459.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.69 | Memory:  114276
+Ep (Global): 259/1000 (Sesión: 259) | Steps: 175 | Score:  12 | Total Reward Ep:  225.2 | Epsilon: 0.0001 | Avg Score (100ep):  27.62 | Memory:  114451
+Ep (Global): 260/1000 (Sesión: 260) | Steps: 472 | Score:  29 | Total Reward Ep:  550.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.73 | Memory:  114923
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 260
+Ep (Global): 261/1000 (Sesión: 261) | Steps: 492 | Score:  29 | Total Reward Ep:  549.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.90 | Memory:  115415
+Ep (Global): 262/1000 (Sesión: 262) | Steps: 729 | Score:  47 | Total Reward Ep:  897.6 | Epsilon: 0.0001 | Avg Score (100ep):  28.01 | Memory:  116144
+Ep (Global): 263/1000 (Sesión: 263) | Steps: 236 | Score:  14 | Total Reward Ep:  262.2 | Epsilon: 0.0001 | Avg Score (100ep):  27.84 | Memory:  116380
+Ep (Global): 264/1000 (Sesión: 264) | Steps: 598 | Score:  39 | Total Reward Ep:  744.1 | Epsilon: 0.0001 | Avg Score (100ep):  28.05 | Memory:  116978
+Ep (Global): 265/1000 (Sesión: 265) | Steps: 318 | Score:  21 | Total Reward Ep:  398.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.90 | Memory:  117296
+Ep (Global): 266/1000 (Sesión: 266) | Steps: 362 | Score:  27 | Total Reward Ep:  515.9 | Epsilon: 0.0001 | Avg Score (100ep):  27.74 | Memory:  117658
+Ep (Global): 267/1000 (Sesión: 267) | Steps: 513 | Score:  31 | Total Reward Ep:  588.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.81 | Memory:  118171
+Ep (Global): 268/1000 (Sesión: 268) | Steps: 545 | Score:  39 | Total Reward Ep:  746.8 | Epsilon: 0.0001 | Avg Score (100ep):  27.78 | Memory:  118716
+Ep (Global): 269/1000 (Sesión: 269) | Steps: 543 | Score:  32 | Total Reward Ep:  606.9 | Epsilon: 0.0001 | Avg Score (100ep):  27.98 | Memory:  119259
+Ep (Global): 270/1000 (Sesión: 270) | Steps: 444 | Score:  34 | Total Reward Ep:  651.8 | Epsilon: 0.0001 | Avg Score (100ep):  27.99 | Memory:  119703
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 270
+Ep (Global): 271/1000 (Sesión: 271) | Steps: 500 | Score:  32 | Total Reward Ep:  609.0 | Epsilon: 0.0001 | Avg Score (100ep):  28.08 | Memory:  120203
+Ep (Global): 272/1000 (Sesión: 272) | Steps: 396 | Score:  29 | Total Reward Ep:  554.2 | Epsilon: 0.0001 | Avg Score (100ep):  28.10 | Memory:  120599
+Ep (Global): 273/1000 (Sesión: 273) | Steps: 227 | Score:  16 | Total Reward Ep:  302.6 | Epsilon: 0.0001 | Avg Score (100ep):  27.92 | Memory:  120826
+Ep (Global): 274/1000 (Sesión: 274) | Steps: 194 | Score:  15 | Total Reward Ep:  284.3 | Epsilon: 0.0001 | Avg Score (100ep):  27.90 | Memory:  121020
+Ep (Global): 275/1000 (Sesión: 275) | Steps: 454 | Score:  34 | Total Reward Ep:  651.3 | Epsilon: 0.0001 | Avg Score (100ep):  28.06 | Memory:  121474
+Ep (Global): 276/1000 (Sesión: 276) | Steps: 365 | Score:  27 | Total Reward Ep:  515.7 | Epsilon: 0.0001 | Avg Score (100ep):  27.92 | Memory:  121839
+Ep (Global): 277/1000 (Sesión: 277) | Steps: 621 | Score:  35 | Total Reward Ep:  663.0 | Epsilon: 0.0001 | Avg Score (100ep):  28.04 | Memory:  122460
+Ep (Global): 278/1000 (Sesión: 278) | Steps: 430 | Score:  30 | Total Reward Ep:  572.5 | Epsilon: 0.0001 | Avg Score (100ep):  28.16 | Memory:  122890
+Ep (Global): 279/1000 (Sesión: 279) | Steps: 258 | Score:  19 | Total Reward Ep:  361.1 | Epsilon: 0.0001 | Avg Score (100ep):  28.05 | Memory:  123148
+Ep (Global): 280/1000 (Sesión: 280) | Steps: 522 | Score:  33 | Total Reward Ep:  627.9 | Epsilon: 0.0001 | Avg Score (100ep):  27.91 | Memory:  123670
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 280
+Ep (Global): 281/1000 (Sesión: 281) | Steps: 170 | Score:  11 | Total Reward Ep:  205.5 | Epsilon: 0.0001 | Avg Score (100ep):  27.81 | Memory:  123840
+Ep (Global): 282/1000 (Sesión: 282) | Steps: 474 | Score:  28 | Total Reward Ep:  530.3 | Epsilon: 0.0001 | Avg Score (100ep):  27.93 | Memory:  124314
+Ep (Global): 283/1000 (Sesión: 283) | Steps: 347 | Score:  24 | Total Reward Ep:  456.6 | Epsilon: 0.0001 | Avg Score (100ep):  27.83 | Memory:  124661
+Ep (Global): 284/1000 (Sesión: 284) | Steps: 674 | Score:  43 | Total Reward Ep:  820.3 | Epsilon: 0.0001 | Avg Score (100ep):  28.14 | Memory:  125335
+Ep (Global): 285/1000 (Sesión: 285) | Steps: 269 | Score:  15 | Total Reward Ep:  280.5 | Epsilon: 0.0001 | Avg Score (100ep):  28.03 | Memory:  125604
+Ep (Global): 286/1000 (Sesión: 286) | Steps: 243 | Score:  19 | Total Reward Ep:  361.8 | Epsilon: 0.0001 | Avg Score (100ep):  27.98 | Memory:  125847
+Ep (Global): 287/1000 (Sesión: 287) | Steps: 143 | Score:  12 | Total Reward Ep:  226.8 | Epsilon: 0.0001 | Avg Score (100ep):  27.86 | Memory:  125990
+Ep (Global): 288/1000 (Sesión: 288) | Steps: 298 | Score:  21 | Total Reward Ep:  399.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.74 | Memory:  126288
+Ep (Global): 289/1000 (Sesión: 289) | Steps: 292 | Score:  18 | Total Reward Ep:  339.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.68 | Memory:  126580
+Ep (Global): 290/1000 (Sesión: 290) | Steps: 378 | Score:  27 | Total Reward Ep:  515.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.77 | Memory:  126958
+Modelo Keras guardado en trained_data\dqn_snake_checkpoint_9_DDQN.keras
+Checkpoint (modelo y estado) guardado en episodio global 290
+Ep (Global): 291/1000 (Sesión: 291) | Steps: 352 | Score:  22 | Total Reward Ep:  416.4 | Epsilon: 0.0001 | Avg Score (100ep):  27.66 | Memory:  127310
+Ep (Global): 292/1000 (Sesión: 292) | Steps: 541 | Score:  33 | Total Reward Ep:  627.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.65 | Memory:  127851
+Ep (Global): 293/1000 (Sesión: 293) | Steps: 403 | Score:  24 | Total Reward Ep:  453.8 | Epsilon: 0.0001 | Avg Score (100ep):  27.69 | Memory:  128254
+Ep (Global): 294/1000 (Sesión: 294) | Steps: 227 | Score:  17 | Total Reward Ep:  322.6 | Epsilon: 0.0001 | Avg Score (100ep):  27.61 | Memory:  128481
+Ep (Global): 295/1000 (Sesión: 295) | Steps: 477 | Score:  30 | Total Reward Ep:  570.1 | Epsilon: 0.0001 | Avg Score (100ep):  27.54 | Memory:  128958
+Ep (Global): 296/1000 (Sesión: 296) | Steps: 402 | Score:  25 | Total Reward Ep:  473.9 | Epsilon: 0.0001 | Avg Score (100ep):  27.71 | Memory:  129360
+Ep (Global): 297/1000 (Sesión: 297) | Steps: 342 | Score:  26 | Total Reward Ep:  496.9 | Epsilon: 0.0001 | Avg Score (100ep):  27.46 | Memory:  129702
+Ep (Global): 298/1000 (Sesión: 298) | Steps: 757 | Score:  44 | Total Reward Ep:  836.2 | Epsilon: 0.0001 | Avg Score (100ep):  27.55 | Memory:  130459
+Ep (Global): 299/1000 (Sesión: 299) | Steps: 420 | Score:  28 | Total Reward Ep:  533.0 | Epsilon: 0.0001 | Avg Score (100ep):  27.63 | Memory:  130879
+Ep (Global): 300/1000 (Sesión: 300) | Steps: 497 | Score:  34 | Total Reward Ep:  649.2 | Epsilon: 0.0001 | Avg Score (100ep):  27.56 | Memory:  131376

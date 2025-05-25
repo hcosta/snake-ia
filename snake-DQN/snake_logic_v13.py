@@ -6,8 +6,8 @@ from numba import jit, int32
 # from numba.typed import List as NumbaList
 
 # --- Constantes del Juego ---
-SCREEN_WIDTH_LOGIC = 401  # Ancho lógico del tablero
-SCREEN_HEIGHT_LOGIC = 401  # Alto lógico del tablero
+SCREEN_WIDTH_LOGIC = 451  # Ancho lógico del tablero
+SCREEN_HEIGHT_LOGIC = 451  # Alto lógico del tablero
 STEP_SIZE_LOGIC = 20      # Tamaño de cada celda y paso de la serpiente
 
 # CAMBIO: Acciones relativas según el informe.

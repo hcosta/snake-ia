@@ -59,7 +59,7 @@ else:
 
 # --- Constantes y Hiperparámetros del Trainer ---
 # CAMBIO: Versión del agente para este trainer.
-AGENT_VERSION_TRAINER = "7v2"
+AGENT_VERSION_TRAINER = "7"
 if AGENT_VERSION_FROM_AGENT != AGENT_VERSION_TRAINER:
     print(
         f"Advertencia: AGENT_VERSION en trainer ({AGENT_VERSION_TRAINER}) y agente ({AGENT_VERSION_FROM_AGENT}) no coinciden.")

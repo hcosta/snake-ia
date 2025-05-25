@@ -33,7 +33,7 @@ except ImportError:
     Adam = None
 
 # CAMBIO: Versión del agente actualizada.
-AGENT_VERSION = "7v2"
+AGENT_VERSION = "7"
 DATA_DIR = "trained_data"
 
 

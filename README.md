@@ -111,6 +111,8 @@ El camino con Deep Q-Learning ha sido un proceso iterativo de experimentación, 
 | DQN v5    | ~20        | 10,000    | Optimización con Numba y pruebas de paralelismo    |
 | DQN v6    | ~10        | 10,000    | Se añade un 12º parámetro; resultado contraproducente |
 | DQN v7    | ~24        | 1,000     | Vuelta a 11 parámetros y optimización inspirada en papers |
+| DQN v8    | ~28        | 1,000     | Ajuste del min epsilon, recompensas e hiperparámetros |
+| DDQN v9   | ~28        | 300       | Implementación algoritmo Double DQN, mismos ajustes  |
 
 > Las puntuaciones pueden variar entre ejecuciones, estas cifras representan tendencias generales observadas.
 
