@@ -105,14 +105,17 @@ El camino con Deep Q-Learning ha sido un proceso iterativo de experimentación, 
 
 | Versión   | Puntuación | Episodios | Comentarios                                         |
 |-----------|------------|-----------|-----------------------------------------------------|
-| QL v1     | ~20        | 10,000    | A partir de aquí se estanca                          |
-| QL v2     | ~20        | 10,000    | Separación de colisión en dos partes, poca mejora  |
-| DQN v4    | ~20        | 10,000    | Diferentes ajustes básicos, rendimiento errático   |
-| DQN v5    | ~20        | 10,000    | Optimización con Numba y pruebas de paralelismo    |
-| DQN v6    | ~10        | 10,000    | Se añade un 12º parámetro; resultado contraproducente |
-| DQN v7    | ~24        | 1,000     | Vuelta a 11 parámetros y optimización inspirada en papers |
-| DQN v8    | ~28        | 1,000     | Ajuste del min epsilon, recompensas e hiperparámetros |
-| DDQN v9   | ~28        | 300       | Implementación algoritmo Double DQN, mismos ajustes  |
+| QL v1         | ~20        | 10,000    | A partir de aquí se estanca                          |
+| QL v2         | ~20        | 10,000    | Separación de colisión en dos partes, poca mejora  |
+| DQN v4        | ~20        | 10,000    | Diferentes ajustes básicos, rendimiento errático   |
+| DQN v5        | ~20        | 10,000    | Optimización con Numba y pruebas de paralelismo    |
+| DQN v6        | ~10        | 10,000    | Se añade un 12º parámetro; resultado contraproducente |
+| DQN v7        | ~24        | 1,000     | Vuelta a 11 parámetros y optimización inspirada en papers |
+| DQN v8        | ~28        | 1,000     | Ajuste del min epsilon, recompensas e hiperparámetros |
+| DDQN v9       | ~28        | 300       | Implementación Double DQN, mismos ajustes  |
+| DDDQN v10     | ~28        | 300       | Implementación Dueling Double DQN, mismos ajustes |
+| DDDQN v10.2   | ~32        | 200       | Tres estados añadidos para detectar trampas inmediatas |
+| DDDQN v10.4   | ~        |        | Cuarto estado que indica si se encierra en si misma |
 
 > Las puntuaciones pueden variar entre ejecuciones, estas cifras representan tendencias generales observadas.
 

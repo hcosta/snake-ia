@@ -29,6 +29,7 @@ REWARD_SELF_COLLISION_LOGIC = -5
 REWARD_MOVE_LOGIC = -0.05  # premiar cuanto más tiempo viva la serpiente
 REWARD_STAGNATION_LOOP_LOGIC = -5  # Penalización si no come en muchos pasos.
 REWARD_DANGER_MOVE = -1
+STATE_SIZE_EXPECTED = 15
 
 # --- Funciones Auxiliares (Numba opcional si se mantiene para colisiones) ---
 
@@ -153,83 +154,220 @@ class SnakeLogic:
             return True
         return False
 
+    # Dentro de la clase SnakeLogic en snake_logic_v15.py
+    def _is_immediate_trap(self, hypothetical_head_x, hypothetical_head_y,
+                           dx_at_hypothetical_pos, dy_at_hypothetical_pos):
+        """
+        Evalúa si la posición (hypothetical_head_x, hypothetical_head_y)
+        con la dirección (dx_at_hypothetical_pos, dy_at_hypothetical_pos)
+        es una trampa donde todos los movimientos relativos siguientes son colisiones.
+
+        Para esta comprobación, el "cuerpo" relevante es el cuerpo de la serpiente
+        COMO SI YA SE HUBIERA MOVIDO a (hypothetical_head_x, hypothetical_head_y).
+        """
+        if not self.snake_body:  # No debería ocurrir si se llama desde get_state
+            return 0
+
+        # 1. Construir el cuerpo hipotético de la serpiente
+        #    La nueva cabeza está en (hypothetical_head_x, hypothetical_head_y)
+        #    El resto del cuerpo son los segmentos anteriores de la cabeza actual,
+        #    asumiendo que la serpiente se movió un paso sin comer.
+        hypothetical_body_list = [
+            {'x': hypothetical_head_x, 'y': hypothetical_head_y}]
+        # Tomamos los primeros N-1 segmentos del cuerpo actual para formar la cola del cuerpo hipotético
+        # donde N es la longitud actual de la serpiente.
+        # Esto simula que la cabeza se movió y el resto del cuerpo la siguió.
+        for i in range(len(self.snake_body) - 1):
+            hypothetical_body_list.append(self.snake_body[i])
+
+        # Si la serpiente original solo tenía 1 segmento (la cabeza),
+        # el cuerpo hipotético solo tendrá la hypothetical_head.
+        # Esto está bien, ya que no puede chocar consigo misma si solo mide 1.
+
+        hypothetical_snake_body_np = np.array(
+            [[seg['x'], seg['y']] for seg in hypothetical_body_list], dtype=np.int32
+        )
+
+        # 2. Evaluar las 3 acciones relativas DESDE la posición hipotética
+
+        #   a. Moverse Recto desde la posición hipotética
+        next_potential_x_s = hypothetical_head_x + dx_at_hypothetical_pos
+        next_potential_y_s = hypothetical_head_y + dy_at_hypothetical_pos
+
+        is_wall_s = self._is_wall_collision(
+            next_potential_x_s, next_potential_y_s)
+        # Para la colisión con el cuerpo, usamos el cuerpo hipotético.
+        # (s2_x, s2_y) no puede ser igual a (hypothetical_head_x, hypothetical_head_y) porque es un paso adelante.
+        # Pero sí puede chocar con el resto del cuerpo hipotético.
+        is_body_s = False
+        if not is_wall_s:  # Solo chequear cuerpo si no hay pared
+            is_body_s = _is_body_collision_static(
+                next_potential_x_s, next_potential_y_s, hypothetical_snake_body_np)
+        danger_s = is_wall_s or is_body_s
+
+        #   b. Girar a la Izquierda desde la posición hipotética
+        dx_l = -dy_at_hypothetical_pos
+        dy_l = dx_at_hypothetical_pos
+        next_potential_x_l = hypothetical_head_x + dx_l
+        next_potential_y_l = hypothetical_head_y + dy_l
+
+        is_wall_l = self._is_wall_collision(
+            next_potential_x_l, next_potential_y_l)
+        is_body_l = False
+        if not is_wall_l:
+            is_body_l = _is_body_collision_static(
+                next_potential_x_l, next_potential_y_l, hypothetical_snake_body_np)
+        danger_l = is_wall_l or is_body_l
+
+        #   c. Girar a la Derecha desde la posición hipotética
+        dx_r = dy_at_hypothetical_pos
+        dy_r = -dx_at_hypothetical_pos
+        next_potential_x_r = hypothetical_head_x + dx_r
+        next_potential_y_r = hypothetical_head_y + dy_r
+
+        is_wall_r = self._is_wall_collision(
+            next_potential_x_r, next_potential_y_r)
+        is_body_r = False
+        if not is_wall_r:
+            is_body_r = _is_body_collision_static(
+                next_potential_x_r, next_potential_y_r, hypothetical_snake_body_np)
+        danger_r = is_wall_r or is_body_r
+
+        if danger_s and danger_l and danger_r:
+            return 1  # Es una trampa: todos los movimientos desde la posición hipotética son peligrosos
+        return 0
     # CAMBIO: Función get_state completamente redefinida para 11 parámetros booleanos.
+
+    def _is_head_critically_near_distant_tail(self, critical_manhattan_distance=2):
+        """
+        ¿Se Está Cerrando un Bucle Sobre Sí Misma?
+        Concepto: Esta bandera se activaría (True/1) si la cabeza de la serpiente está muy cerca de un segmento "distante" de su propia cola, de una manera que sugiere que está a punto de encerrarse en un bucle o que el espacio se está volviendo críticamente restringido por su propia cola. No se trata de un choque inmediato con el cuello, sino de un peligro de auto-atrapamiento a corto-medio plazo.
+        - Solo se considera si la serpiente tiene una longitud mínima (ej. > 4 o 5 segmentos) para que "cerrar un bucle" tenga sentido.
+        - Se toma la posición de la cabeza.
+        - Se itera sobre los segmentos de la cola, excluyendo los primeros segmentos cercanos a la cabeza (el "cuello", que ya están cubiertos por danger_X). Por ejemplo, empezar a comprobar desde el 4º o 5º segmento del cuerpo (índice 3 o 4).
+        - Para cada uno de estos segmentos "distantes" de la cola, se calcula la distancia a la cabeza.
+        - Si la cabeza está a una distancia críticamente pequeña (ej. 1 o 2 casillas de Manhattan, o un radio pequeño) de alguno de estos segmentos distantes de la cola, la bandera se activa.
+        """
+        if len(self.snake_body) < 5:  # Umbral de longitud para que tenga sentido
+            return 0
+
+        head_pos = self.snake_body[0]
+        # Comprobar contra segmentos de la cola, saltándose el cuello (e.g., los 3 primeros después de la cabeza)
+        for i in range(3, len(self.snake_body)):
+            segment_pos = self.snake_body[i]
+            dist_x = abs(head_pos['x'] - segment_pos['x'])
+            dist_y = abs(head_pos['y'] - segment_pos['y'])
+
+            # Distancia de Manhattan (en unidades de celda)
+            manhattan_dist_cells = (dist_x + dist_y) / self.step_size
+
+            if manhattan_dist_cells <= critical_manhattan_distance:
+                return 1  # La cabeza está críticamente cerca de un segmento distante de la cola
+        return 0
+
     def get_state(self):
         """
-        Calcula el estado actual del juego como una tupla de 11 booleanos (0 o 1).
-        Los parámetros están alineados con el informe de referencia.
+        Calcula el estado actual del juego como una tupla de 14 booleanos (0 o 1).
+        Incluye peligros inmediatos y detección de trampas/callejones de 1 paso.
         """
-        if not self.snake_body:  # Caso improbable, pero por seguridad
-            return (0,) * 11
+        # El nuevo STATE_SIZE será 14
+        if not self.snake_body:
+            return (0,) * 14
 
         head = self.snake_body[0]
-
-        # Determinar la dirección efectiva actual (dx_eff, dy_eff)
-        # Esto es importante porque current_dx y current_dy reflejan la *última* acción tomada.
         dx_eff, dy_eff = self.current_dx, self.current_dy
-        # Si la serpiente aún no se ha movido (al inicio del juego, current_dx/dy podrían ser 0,0)
-        # o si por alguna razón se detuvo, se infiere la dirección del segmento anterior.
-        if dx_eff == 0 and dy_eff == 0:
+
+        if dx_eff == 0 and dy_eff == 0:  # Determinar dirección efectiva si está parada
             if len(self.snake_body) > 1:
                 prev_segment = self.snake_body[1]
-                # Diferencia de coordenadas para inferir dirección
                 dx_eff = np.sign(
                     head['x'] - prev_segment['x']) * self.step_size
                 dy_eff = np.sign(
                     head['y'] - prev_segment['y']) * self.step_size
-                # Si cabeza y segmento anterior coinciden (improbable)
                 if dx_eff == 0 and dy_eff == 0:
-                    dx_eff = self.step_size  # Por defecto, moverse a la derecha
-            else:  # Serpiente de un solo segmento
-                dx_eff = self.step_size  # Por defecto, moverse a la derecha
+                    dx_eff = self.step_size
+            else:
+                dx_eff = self.step_size
 
-        # 1. Peligro Recto (en la dirección actual dx_eff, dy_eff)
-        #    Coordenadas del punto directamente en frente de la cabeza.
+        # --- Peligros Inmediatos (1 paso adelante desde la posición ACTUAL) ---
+        # Para estos, _is_general_collision usa check_body_from_index=1 para ignorar la cabeza actual.
+
+        # Peligro Recto
         point_straight_x = head['x'] + dx_eff
         point_straight_y = head['y'] + dy_eff
         danger_straight = 1 if self._is_general_collision(
             point_straight_x, point_straight_y, 1) else 0
 
-        # 2. Peligro a la Izquierda Relativa
-        #    Dirección a la izquierda relativa: dx_left_rel = -dy_eff, dy_left_rel = dx_eff
-        dx_left_rel = -dy_eff
-        dy_left_rel = dx_eff
-        point_left_x = head['x'] + dx_left_rel
-        point_left_y = head['y'] + dy_left_rel
+        # Peligro Izquierda Relativa
+        # Dirección si gira a la izquierda DESDE la posición actual
+        dx_left_rel_current = -dy_eff
+        dy_left_rel_current = dx_eff
+        point_left_x = head['x'] + dx_left_rel_current
+        point_left_y = head['y'] + dy_left_rel_current
         danger_left_relative = 1 if self._is_general_collision(
             point_left_x, point_left_y, 1) else 0
 
-        # 3. Peligro a la Derecha Relativa
-        #    Dirección a la derecha relativa: dx_right_rel = dy_eff, dy_right_rel = -dx_eff
-        dx_right_rel = dy_eff
-        dy_right_rel = -dx_eff
-        point_right_x = head['x'] + dx_right_rel
-        point_right_y = head['y'] + dy_right_rel
+        # Peligro Derecha Relativa
+        # Dirección si gira a la derecha DESDE la posición actual
+        dx_right_rel_current = dy_eff
+        dy_right_rel_current = -dx_eff
+        point_right_x = head['x'] + dx_right_rel_current
+        point_right_y = head['y'] + dy_right_rel_current
         danger_right_relative = 1 if self._is_general_collision(
             point_right_x, point_right_y, 1) else 0
 
-        # 4-7. Dirección actual de movimiento (basada en dx_eff, dy_eff)
-        # Asumiendo: +Y es ARRIBA, -Y es ABAJO, -X es IZQUIERDA, +X es DERECHA
-        # Ajustar si el sistema de coordenadas es diferente (PyGame suele tener +Y hacia abajo)
-        # En este código, ACTION_MAP_LOGIC (si se usara) tenía +Y para UP.
-        # Si current_dy es positivo, se mueve hacia "arriba" en la lógica.
-        moving_up = 1 if dy_eff > 0 else 0  # Y aumenta
-        moving_down = 1 if dy_eff < 0 else 0  # Y disminuye
-        moving_left = 1 if dx_eff < 0 else 0  # X disminuye
-        moving_right = 1 if dx_eff > 0 else 0  # X aumenta
+        # --- Detección de Callejones (evaluando 1 paso MÁS ALLÁ de un movimiento seguro) ---
 
-        # 8-11. Posición de la comida relativa a la cabeza de la serpiente
+        # Callejón si va Recto:
+        # Se evalúa desde (point_straight_x, point_straight_y)
+        # La dirección en esa casilla hipotética sería la misma que la actual (dx_eff, dy_eff)
+        trap_straight = 0
+        if not danger_straight:  # Solo chequear trampa si el primer movimiento es seguro
+            trap_straight = self._is_immediate_trap(
+                point_straight_x, point_straight_y, dx_eff, dy_eff)
+
+        # Callejón si Gira a la Izquierda:
+        # Se evalúa desde (point_left_x, point_left_y)
+        # La dirección en esa casilla hipotética sería (dx_left_rel_current, dy_left_rel_current)
+        trap_left = 0
+        if not danger_left_relative:
+            trap_left = self._is_immediate_trap(
+                point_left_x, point_left_y, dx_left_rel_current, dy_left_rel_current)
+
+        # Callejón si Gira a la Derecha:
+        # Se evalúa desde (point_right_x, point_right_y)
+        # La dirección en esa casilla hipotética sería (dx_right_rel_current, dy_right_rel_current)
+        trap_right = 0
+        if not danger_right_relative:
+            trap_right = self._is_immediate_trap(
+                point_right_x, point_right_y, dx_right_rel_current, dy_right_rel_current)
+
+        # Está Cerrando un Bucle Sobre Sí Misma?
+        head_near_distant_tail = self._is_head_critically_near_distant_tail()
+
+        # --- Resto de las características del estado (sin cambios) ---
+        moving_up = 1 if dy_eff > 0 else 0
+        moving_down = 1 if dy_eff < 0 else 0
+        moving_left = 1 if dx_eff < 0 else 0
+        moving_right = 1 if dx_eff > 0 else 0
+
         food_left_of_snake = 1 if self.food_x < head['x'] else 0
         food_right_of_snake = 1 if self.food_x > head['x'] else 0
-        # Asumiendo +Y es arriba
+        # Asumiendo +Y es pantalla arriba
         food_above_snake = 1 if self.food_y > head['y'] else 0
-        # Asumiendo +Y es arriba
         food_below_snake = 1 if self.food_y < head['y'] else 0
+
+        assert len(
+            state) == STATE_SIZE_EXPECTED, "La longitud del estado no coincide con la esperada (15)"
 
         state = (
             danger_straight,
             danger_left_relative,
             danger_right_relative,
+            trap_straight,          # NUEVO
+            trap_left,              # NUEVO
+            trap_right,             # NUEVO
+            head_near_distant_tail,  # NUEVO 2
             moving_up,
             moving_down,
             moving_left,
